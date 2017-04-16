@@ -17,7 +17,7 @@ layout: single
       {{ content | split:'<!-- more -->' | first |markdownify}}
     </div>
     <figure class='photo'>
-      <img src='{{site.cdn_url}}/images/articles/{{page.photo["image"]}}' />
+      <img src='{{site.cdn_url}}/images/articles/{{page.photo["image"]}}' alt=""/>
       <div>{{page.photo['caption']}} (Photo: <a href="{{page.photo['url']}}">{{page.photo['creator']}}</a> {{page.photo['license']}}.)</div>
     </figure>
     <div class="post-content" itemprop="articleBody">
