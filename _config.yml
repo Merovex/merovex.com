@@ -1,0 +1,139 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Merovex
+email: dausha@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+
+gems:
+  - jekyll-feed
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  -
+    scope:
+      path: ""
+      type: "books"
+    values:
+      layout: korektu
+      featured: false
+      hidden: false
+      variant: false
+      recaptcha: true
+      editions:
+        - Alpha
+        - Beta
+  -
+    scope:
+      path: ""
+      type: "writing-a-novel-series"
+    values:
+      layout: single
+  -
+    scope:
+      path: ""
+      type: "writing-tips"
+    values:
+      layout: single
+  -
+    scope:
+      path: ""
+      type: "sales-charts"
+    values:
+      layout: sales-chart
+  -
+    scope:
+      path: ""
+      type: "writing-logs"
+    values:
+      layout: writing-progress-chart
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: Ben Wilson
+  -
+    scope:
+      path: ""
+      type: "drafts"
+    values:
+      layout: post
+      author: Ben Wilson
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+  - data
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - database.rules.json
+  - firebase.json
+  - .travis.yml
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
