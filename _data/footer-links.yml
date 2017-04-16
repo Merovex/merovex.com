@@ -1,0 +1,18 @@
+title:
+  center: Center Title
+  right: Right Title
+center:
+  - name: About
+    url: /about/
+  - name: Articles
+    url: /articles/
+  - name: Books
+    url: /books/
+
+right:
+  - name: About
+    url: /about/
+  - name: Articles
+    url: /articles/
+  - name: Books
+    url: /books/
