@@ -2,7 +2,7 @@
 photo:
   image: 4768985621_writer-lamp.jpg
   creator: jDevaun.Photography/Flickr
-  url: https://www.flickr.com/photos/34316967@N04/4768985621/
+  url: "#"
   license: under CC BY-ND 2.0
   caption: Writing by Light
 layout: post
