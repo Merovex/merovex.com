@@ -13,22 +13,116 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Merovex
-email: dausha@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+title                     : Merovex Press
+description               : Merovex Press is the website for Ben Wilson, author of the Postal Marine Series.
+# baseurl                   : "" # Only use when Jekyll site is not at root.
+# url                       : https://www.merovex.com
+cdn_url                   : https://d1czp97ry8if6j.cloudfront.net
 
+#----------------------------------------
+# Site Author
+#----------------------------------------
+author:
+  name                    : "Ben Wilson"
+  avatar                  : "/assets/images/bio-photo.jpg"
+  bio                     : "I am an amazing person."
+  location                : "Somewhere"
+  email                   : "dausha@gmail.com"
+  uri                     :
+  bitbucket               :
+  codepen                 :
+  dribbble                :
+  flickr                  :
+  facebook                :
+  foursquare              :
+  github                  :
+  google_plus             : BenWilsonAuthor
+  keybase                 :
+  instagram               :
+  lastfm                  :
+  linkedin                :
+  pinterest               :
+  soundcloud              :
+  stackoverflow           : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
+  steam                   :
+  tumblr                  :
+  twitter                 : merovex
+  vine                    :
+  weibo                   :
+  xing                    :
+  youtube                 :
+
+subscribe_rss             : /atom.xml
+
+#----------------------------------------
+# Blog Category
+#----------------------------------------
+category_dir              : /
+permalink                 : /:categories/:title/
+
+#----------------------------------------
+# Social Sharing
+#----------------------------------------
+
+#----------------------------------------
+# SEO Related
+#----------------------------------------
+google_site_verification  :
+bing_site_verification    :
+alexa_site_verification   :
+yandex_site_verification  :
+
+#----------------------------------------
 # Build settings
-markdown: kramdown
+# - Conversion
+# - Markdown Processing
+#----------------------------------------
 
-gems:
-  - jekyll-feed
+# highlighter               : rouge
+markdown                  : kramdown
+lsi                       : false
+excerpt_separator         : "\n\n"
+incremental               : false
+
+# Markdown Processing
+kramdown:
+  input                   : GFM
+  hard_wrap               : false
+  auto_ids                : true
+  footnote_nr             : 1
+  entity_output           : as_char
+  toc_levels              : 2..4
+  smart_quotes            : lsquo,rsquo,ldquo,rdquo
+  syntax_highlighter_opts:
+    disable               : true
+
+#----------------------------------------
+# Analytics
+#----------------------------------------
+analytics:
+  provider                : false # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id           :
+
+#----------------------------------------
+# Collections
+#----------------------------------------
+collections:
+  books:
+    output: true
+    permalink: /korektu/:path/
+  writing-tips:
+    output: true
+    permalink: /:collection/:path/
+  writing-a-novel-series:
+    output: true
+    permalink: /wans/:path/
+  sales-charts:
+    output: true
+    permalink: /sales/:path/
+  writing-logs:
+    output: true
+    permalink: /:collection/:path/
 
 defaults:
   # _posts
@@ -137,3 +231,21 @@ keep_files:
   - .svn
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+#----------------------------------------
+# Plugins
+#----------------------------------------
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji

@@ -1,0 +1,47 @@
+---
+layout: single
+title: Categories
+header: Posts By Category
+permalink: /categories/
+group: navigation
+---
+
+<div class='container'>
+  <div class='row'>
+    <aside class='col-lg-4 col-md-6' role='complimentary'>
+      <h3>Category Index</h3>
+      <div class="collection z-depth-1" >{% assign categories_list = site.categories | sort %}
+      {% for site_category in site.data['categories'] %}{% assign site_key = site_category[0] %}{% assign title = site_category[1] %}{% for category in categories_list %}{% if category[0] == site_key or category[0] == title%}{% assign pages_list = category[1] %}{% assign size = category[1].size %}{%endif%}{%endfor%}
+  <a class='titlecase collection-item' href='/categories/#{{ site_key }}'>
+    {{title}}
+    <span class='badge'>{{ size }}</span>
+  </a>{% endfor %}
+{% assign categories_list = nil %}
+      </div>
+    </aside>
+    <main class='col-lg-8 col-md-6' role='region' aria-labelledby='page-title'>
+    {% for site_category in site.data['categories'] %}{% assign site_key = site_category[0] %}{% assign title = site_category[1] %}
+    <h2 id="{{ site_key }}">{{ title }}</h2>
+
+    <div class='collection'>{% for category in site.categories %}{% if category[0] == site_key or category[0] == title%}{% assign pages_list = category[1] %}
+      {% if site.JB.pages_list.provider == "custom" %}
+  {% include custom/pages_list %}
+{% else %}
+  {% for node in pages_list %}
+    {% if node.title != null %}
+      {% if group == null or group == node.group %}
+        {% if page.url == node.url %}
+        <div class="collection-item"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></div>
+        {% else %}
+        <div  class="collection-item"><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></div>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% assign pages_list = nil %}
+{% assign group = nil %}{%endif%}
+    {% endfor %}</div>{% endfor %}
+    </main>
+  </div>
+</div>

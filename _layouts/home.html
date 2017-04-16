@@ -1,26 +1,25 @@
 ---
 layout: default
 ---
+<div id="hero" class="jumbotron  jumbotron-fluid">
+  <div class='img'></div>
+  <div class="container">
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-{% include header.html %}
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
+      <div class='row'>
+        <div class='col col-lg-5'>
+        <img src="https://dausha.s3.amazonaws.com/images/bellicose-flat-sm.png"
+       alt=""
+       data-animation="animated fadeInLeft">
+        </div>
+        <div class='col col-lg-7'>
+          <h2 class='white-text z-index-2'>Struggling orphan becomes Postal Marines' Greatest Hero</h2>
+          <p class='tagline white-text z-index-1 lead hide-on-small-only'>
+            Desperate to succeed, Bophendze embedded an ancient artificial intelligence in his brain. Litovio left a promising career in the Navy to join the Postal Marines. They both must fight to survive the epic Battle of Tannenberg Gate. But for Bophendze, the real struggle is all in his head.
+          </p>
+          <a href="http://amzn.to/1K4jaYV" id="download-button" class="btn btn-primary btn-lg">Read <em>Bellicose</em> Now</a>
+        </div>
+      </div>
+  </div>
 </div>
+
+{% include header.html %}
