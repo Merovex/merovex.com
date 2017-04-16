@@ -1,0 +1,33 @@
+---
+layout: wide
+---
+{% include amcharts/scripts.html %}
+
+{{ content }}
+
+<h2>Writing Charts</h2>
+
+{% include amcharts/writing/daily.html %}
+{% include amcharts/writing/cumulative.html %}
+{% include amcharts/writing/wpd.html %}
+
+<script src='/assets/js/writing-progress.amchart.js' type='text/javascript'></script>
+<script type='text/javascript'>
+    var chartData;
+    var arrow;
+    var axis;
+    var average;
+    var makeup;
+    var today;
+    $.getJSON('/data/writing-{{page.date| date: '%Y'}}.json').done(function(data) {
+        chartData = data['data'];
+        today = data['today'];
+        average = data['average'];
+        makeup = data['makeup'];
+        hours = data['hours'];
+        wphSpeed(data['aveWPH'], hours, chartData);
+        makeChart('chart-daily', 'words', ['words','average','d_goal']);
+        makeChart('chart-cumulative', 'goal', ['goal','total']);
+        makeChart('chart-wpd', 'wph', ['wph','wph_ave']);
+    });
+</script>
