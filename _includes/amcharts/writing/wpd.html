@@ -1,0 +1,19 @@
+<div class='row'>
+    <div class='col s12 m4'>
+        <h3 id='chart-wpd-title'>Words per Hour</h3>
+        <p>This chart shows the amount of words per hour.
+{%if page['year'] < 2016 %}
+        This is based on the amount of time spent on my text editor (Sublime Text) and word count. Since I use Sublime for more than just novel writing and can't track that time discretely enough, some counts may be lower than actual. It's an inconsistency I can live with.
+        {%else%}
+ This is based on the amount of time spent on Scrivener, not all of that time would entail novel writing.
+ {%endif%}
+        </p>
+
+        <p>So far this year, I have written <span class='data' id='words-written'>billions</span> words during <span class='data' id='hours-written'>zillions</span> hours of writing.
+        </p>
+    </div>
+    <div id='chart-wpd' class='col s12 m8 amchart'></div>
+</div>
+<div class='row'>
+    <div id='speedometer' class='col s12 m8 offset-m4 amchart'></div>
+</div>
