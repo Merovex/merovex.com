@@ -62,7 +62,7 @@ title: Essays
       <ul>{% assign date = currentdate %}{% endif %}
         <li><a href="{{ post.url }}">{{ post.title }}</a> [{{ post.category }}]</li>{% if forloop.last %}</ul>{% endif %}{% endfor %}
 
-      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+      <p class="rss-subscribe">subscribe <a href="{{ "/atom.xml" | relative_url }}">via RSS</a></p>
 
     </div>
   </div>

@@ -33,7 +33,7 @@ author:
   codepen                 :
   dribbble                :
   flickr                  :
-  facebook                :
+  facebook                : MerovexPress
   foursquare              :
   github                  :
   google_plus             : BenWilsonAuthor
@@ -53,6 +53,8 @@ author:
   youtube                 :
 
 subscribe_rss             : /atom.xml
+protocols:
+  fb_app_id: 974042092652489
 
 #----------------------------------------
 # Blog Category

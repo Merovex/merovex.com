@@ -1,10 +1,7 @@
 ---
 layout: single
 ---
-
-
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
     <header class="post-header">
       <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
       <p class="post-meta">
@@ -16,7 +13,7 @@ layout: single
           • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
         {% endif %}</p>
     </header>
-    <div class='excerpt'>
+    <div class='excerpt lead'>
       {{ content | split:'<!-- more -->' | first |markdownify}}
     </div>
     <figure class='photo'>
@@ -27,4 +24,19 @@ layout: single
       {% if page.legal %}{% include legal-disclaimer.html %}{%endif%}
       {{ content | split:"<!-- more -->" | last |markdownify }}
     </div>
+    <aside role='complementary' class='post-footer'>
+        {% if page.series %}<hr>{%include article-series.html %}{%endif%}
+        <hr>
+        
+        <h4><i class="fa fa-comment" aria-hidden="true"></i> Want to Share Your Reaction?</h4>
+        <p>If you want to discuss this article, find the relevant posting on my <a href='https://www.facebook.com/MerovexPress/'>Facebook</a> page. Thanks!
+        <hr>
+        <div class='blog-subscribe text-center'>
+          <h4><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like This Post?</h4>
+          <p>Sign up for my blog updates and never miss a post.</p>
+          {% include mailchimp.html %}
+          
+        </div>
+    </aside>
   </article>
+  {% include social_networks.html %}

@@ -1,0 +1,41 @@
+---
+layout: default
+title: Tags
+created_at: 2015-10-12 16:46
+date: 2015-10-12 16:46
+modified_at: 2015-10-12 16:46
+description: 'An archive of posts sorted by tag.'
+permalink: /tags/
+---
+
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+<!-- site_tags: {{ site_tags }} -->
+{% assign tag_words = site_tags | split:',' | sort %}
+<!-- tag_words: {{ tag_words }} -->
+
+<div class='container z-depth-1'>
+  <div class='row'>
+  <main class='col l8 m6 s12'>
+  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+    {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+  <h2 id='{{ this_word | cgi_escape }}'>{{ this_word }}</h2>
+  <div class='collection'>
+    {% for post in site.tags[this_word] reversed %}{% if post.title != null %}
+    <div class='collection-item'>
+    {% assign pdate = post.created_at %}{% if pdate == ""%}{% assign pdate = post.date %}{%endif%}
+    {% unless pdate == blank %}
+    <span class='entry-date'><time datetime='{{ pdate | date_to_xmlschema }}' itemprop='datePublished'>{{ pdate | date: '%-d %B %Y' }}</time></span>
+    {% endunless %}
+    &raquo; {% if post.category == 'speaking' %}<i class='fa fa-microphone'></i> {% endif %}<a href='{{ post.url }}'>{{ post.title }}</a></div>
+    {% endif %}{% endfor %}
+  </div>
+  {% endunless %}{% endfor %}
+  </main>
+  <aside class='col l4 m6 s12 hidden-print' role='complimentary'>
+  <h2>Tag Index</h2>
+  <div class='collection'>{% for item in (0..site.tags.size) %}{% unless forloop.last %}{% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+    <a class='collection-item' href='#{{ this_word | cgi_escape }}'>{{ this_word }} <span class='badge'>{{ site.tags[this_word].size }}</span></a>
+  {% endunless %}{% endfor %}
+  </div>
+  </aside>
+</div>

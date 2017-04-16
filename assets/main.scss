@@ -1,23 +1,31 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-
+.dev {
+	border: 1px solid red;
+}
+.social-networks {
+	width: 10%; padding-top: 1in; padding-left: 5%;
+}
 article {
 	.excerpt p::first-letter {
 		float: left;
-	    font-size: 3.1rem;
-	    line-height: 0.9;
-	    padding: 2px 4px 0 3px;
+	    font-size: 3.7rem;
+	    line-height: 1.0;
+	    padding: 0 4px 0 3px;
 	    color: #ab2424;
 	}
+	img {width: 100%; }
 	.photo {
 		text-align: center;
-		font-size: 70%; 
+		font-size: 70%;
 		img {
 			border: 0.5rem solid #fbf8f5;
 			border-radius: 4px;
+			width: 80%;
 		}
 	}
+
 	pre {
 		background: #fbf8f5;
 		padding: 4px;
@@ -50,6 +58,7 @@ html, body { height: 100%; }
 
 main {
 	min-height: 79.8vh; height: auto !important;
+	padding-bottom: 1in;
 }
 .page-content {
 	margin-top: 5vh;
@@ -68,6 +77,7 @@ footer {
 	border-bottom: 3px solid #d32F2F;
 	height: 8vh;
 	padding: 2vh 0;
+	text-align: center
 }
 a.navbar-brand {
 	fill: #d32f2f;

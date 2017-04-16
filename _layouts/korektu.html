@@ -6,12 +6,12 @@ eraru: true
 	<form id="new_fix" action="http://whispering-taiga-70891.herokuapp.com/" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /> 
 
   <div class='form-group'>
-      <input type='hidden' name='book' id='book' value='{{page.book}}' />
+      <input type='hidden' name='book' id='book' value='{{page.title}}' />
       <input type='hidden' name='repo' id='repo' value='{{page.repo}}' />
   		<h3>Where in <em>{{page.title}}</em> are you commenting on?</h3>
   		<div class='row'>
   		  <div class='col-md-6 col-sm-12'>
-  		    <select required id='editin' name='edition' class='form-control'>
+  		    <select required id='edition' name='edition' class='form-control'>
   		      <option disabled='disabled' selected='selected' value=''>Which Edition are you Reading?</option>
   		      {% for e in page.editions %}
   		        <option value='{{e}}'>{{page.book}} v.{{e}}</option>
@@ -34,13 +34,13 @@ eraru: true
         <div class="col-md-6 col-sm-12 align-center">
           <div class="form-check">
             <label class="form-check-label">
-              <input class="form-check-input" type="radio" name="pbk" id="exampleRadios1" value="false" checked>
+              <input class="form-check-input" type="radio" name="pbk" id="exampleRadios1" value="off" checked>
               Kindle
             </label>
           </div>
           <div class="form-check">
             <label class="form-check-label">
-              <input class="form-check-input" type="radio" name="pbk" id="x" value="true">
+              <input class="form-check-input" type="radio" name="pbk" value="on">
               Paperback
             </label>
           </div>
