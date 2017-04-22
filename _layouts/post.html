@@ -27,15 +27,16 @@ layout: single
     <aside role='complementary' class='post-footer'>
         {% if page.series %}<hr>{%include article-series.html %}{%endif%}
         <hr>
-        
+        <div class='alert'>
         <h4><i class="fa fa-comment" aria-hidden="true"></i> Want to Share Your Reaction?</h4>
         <p>If you want to discuss this article, find the relevant posting on my <a href='https://www.facebook.com/MerovexPress/'>Facebook</a> page. Thanks!
+        </p>
+        </div>
         <hr>
-        <div class='blog-subscribe text-center'>
+        <div class='blog-subscribe alert alert-info text-black'>
           <h4><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like This Post?</h4>
           <p>Sign up for my blog updates and never miss a post.</p>
           {% include mailchimp.html %}
-          
         </div>
     </aside>
   </article>

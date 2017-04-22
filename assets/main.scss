@@ -6,6 +6,30 @@
 }
 .social-networks {
 	width: 10%; padding-top: 1in; padding-left: 5%;
+	a.facebook {
+		background: #3b5998 !important;
+		color: white;
+		&:hover {
+			background: #96abd6 !important;
+
+		}
+	}
+	a.twitter {
+		background: #0084b4 !important;
+		color: white;
+		&:hover {
+			background: #4ed0ff !important;
+
+		}
+	}
+	a.google-plus {
+		background: #d34836 !important;
+		color: white;
+		&:hover {
+			background: #e5948a !important;
+
+		}
+	}
 }
 article {
 	.excerpt p::first-letter {
@@ -20,9 +44,10 @@ article {
 		text-align: center;
 		font-size: 70%;
 		img {
-			border: 0.5rem solid #fbf8f5;
-			border-radius: 4px;
+			border: 0.5rem solid #fcf8e3;
 			width: 80%;
+			margin-bottom: 1rem;
+			border-radius: 0.3rem;
 		}
 	}
 
@@ -57,24 +82,30 @@ article {
 html, body { height: 100%; }
 
 main {
-	min-height: 79.8vh; height: auto !important;
+	xmin-height: 79.8vh; xheight: auto !important;
 	padding-bottom: 1in;
 }
 .page-content {
 	margin-top: 5vh;
+	a {
+		text-decoration: underline;
+	}
 }
 .navbar-light .navbar-nav .nav-link {
 	color: rgba(0,0,0,.7);
 }
 .navbar, footer {
-	background-color: #f8f7f7;
-	background: url(/assets/noise.png);
+	background-color: #faf9f9;
+	background-color: #FFF;
 }
 .navbar {
-	border-top: 0.74vh solid #d32F2F;
+	border-top: 1vh solid #d32F2F;
+}
+.text-black {
+	color: #111 !important;
 }
 footer {
-	border-bottom: 3px solid #d32F2F;
+	border-bottom: 1vh solid #d32F2F;
 	height: 8vh;
 	padding: 2vh 0;
 	text-align: center

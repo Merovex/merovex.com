@@ -16,7 +16,7 @@
 title                     : Merovex Press
 description               : Merovex Press is the website for Ben Wilson, author of the Postal Marine Series.
 # baseurl                   : "" # Only use when Jekyll site is not at root.
-# url                       : https://www.merovex.com
+url                       : https://www.merovex.com
 cdn_url                   : https://d1czp97ry8if6j.cloudfront.net
 
 #----------------------------------------

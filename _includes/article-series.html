@@ -1,1 +1,14 @@
-article-series.html
+<div class='alert'>
+<h4><i class="fa fa-list" aria-hidden="true"></i> Articles in <em>{{page.series}}</em> Series</h4>{% assign series = page.series | downcase %}
+
+<p>On the off chance you care to read the entire series in sequence, here's the list:</p>
+
+<ol>{% for post in site.posts reversed %}{% assign ps = post.series|downcase%}{%if series == ps%}
+  {% if post.url == page.url %}
+  <li><b>{{post.title}}</b></li>
+  {%else%}
+  <li><a href='{{post.url}}'>{{post.title}}</a></li>
+  {%endif%}
+{%endif%}
+{%endfor%}</ol>
+</div>
