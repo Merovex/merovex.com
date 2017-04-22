@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wide
 title: Tags
 created_at: 2015-10-12 16:46
 date: 2015-10-12 16:46
@@ -15,7 +15,7 @@ permalink: /tags/
 
 <div class='container z-depth-1'>
   <div class='row'>
-  <main class='col l8 m6 s12'>
+  <main class='col'>
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
   <h2 id='{{ this_word | cgi_escape }}'>{{ this_word }}</h2>
@@ -31,7 +31,7 @@ permalink: /tags/
   </div>
   {% endunless %}{% endfor %}
   </main>
-  <aside class='col l4 m6 s12 hidden-print' role='complimentary'>
+  <aside class='col hidden-print' role='complimentary'>
   <h2>Tag Index</h2>
   <div class='collection'>{% for item in (0..site.tags.size) %}{% unless forloop.last %}{% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
     <a class='collection-item' href='#{{ this_word | cgi_escape }}'>{{ this_word }} <span class='badge'>{{ site.tags[this_word].size }}</span></a>

@@ -85,6 +85,10 @@ main {
 	xmin-height: 79.8vh; xheight: auto !important;
 	padding-bottom: 1in;
 }
+h1 small {
+	display: block;
+	font-size: 40%;
+}
 .page-content {
 	margin-top: 5vh;
 	a {
