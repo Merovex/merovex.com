@@ -82,7 +82,7 @@ article {
 html, body { height: 100%; }
 
 main {
-	xmin-height: 79.8vh; xheight: auto !important;
+	min-height: 79.8vh; height: auto !important;
 	padding-bottom: 1in;
 }
 h1 small {
@@ -93,13 +93,13 @@ h1 small {
 	margin-top: 5vh;
 	a {
 		text-decoration: underline;
+		&:hover{ background-color: #eeadad; text-decoration: none; border-bottom: 1px solid #d32f2f;}
 	}
 }
 .navbar-light .navbar-nav .nav-link {
 	color: rgba(0,0,0,.7);
 }
 .navbar, footer {
-	background-color: #faf9f9;
 	background-color: #FFF;
 }
 .navbar {
@@ -119,7 +119,7 @@ a.navbar-brand {
 }
 #hero {
     position: relative;
-	height: 92.8vh;
+	height: 91vh;
 	margin: 0;
 	padding: 0;
 	background-color: transparent !important;
