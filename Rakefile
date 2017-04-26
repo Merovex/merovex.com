@@ -26,13 +26,14 @@ Dir.glob("#{@task_dir}/*.rake").each { |r| import r }
 require 'ra11y'
 require 'html-proofer'
 desc "Test and Release"
-task :deploy do 
+task :deploy do
   Rake::Task["build"].execute
   Rake::Task["test"].execute
   Rake::Task["firebird"].execute
 end
 desc "Only send to Firebase"
 task :firebase do
+  sh "npm install -g firebase-tools"
   sh "firebase deploy"
 end
 desc "Just Build the release"
@@ -41,7 +42,7 @@ task :build do
 end
 desc "Test the build"
 task :test do
-  
+
   # sh "bundle exec jekyll build"
   HTMLProofer.check_directory(
   	"./_site", {
