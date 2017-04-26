@@ -33,7 +33,7 @@ task :deploy do
 end
 desc "Only send to Firebase"
 task :firebase do
-  sh "npm install -g firebase-tools"
+  # sh "npm install -g firebase-tools"
   sh "firebase deploy"
 end
 desc "Just Build the release"

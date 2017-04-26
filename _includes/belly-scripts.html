@@ -7,3 +7,46 @@ $('#follow').on('shown.bs.modal', function () {
   $('#follow').focus()
 })
 </script>
+
+<!-- Belly Scripts -->
+  <script>
+    $(document).ready(function() {
+      Materialize.updateTextFields();
+      $('.parallax').parallax();
+      $('.button-collapse').sideNav();
+    });
+    $('.dropdown-link').dropdown({
+        inDuration: 300,
+        outDuration: 225,
+        constrain_width: false, // Does not change width of dropdown to that of the activator
+        hover: true, // Activate on hover
+        gutter: 0, // Spacing from edge
+        belowOrigin: false, // Displays dropdown below the button
+        alignment: 'left' // Displays dropdown with edge aligned to the left of button
+      }
+    );
+  </script>
+
+
+  {% include javascripts/google-analytics.html %}
+  {% include javascripts/smooth-scrolling.html %}
+
+  <script src='//cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js'></script>
+
+  <script src='https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js'></script>
+  <script src='https://s3.amazonaws.com/dausha/js/merovex.js'></script>
+  <script src='https://dausha.s3.amazonaws.com/js/drew.min.js'></script>
+
+  {% include javascripts/highlighting.html %}
+  {% include javascripts/get-clicky.html %}
+  {% include diceware.html %}
+  {% include sumome.html %}
+  {% include javascripts/craftmap.html %}
+  {% include javascripts/recaptcha.html %}
+
+    <!-- Comments -->
+  <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.1.0/js/md5.js"></script>
+  <script src="/js/blog.js"></script>
