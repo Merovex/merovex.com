@@ -57,16 +57,18 @@ If you don't trust the Javascript randomization, you can roll your own. Just rol
   </div>
 </form>
 
-
-<ul id='diceWords' class='list-inline'></ul>
-
-<div id='diceWordsCopyableContainer' class='card card-block'>
+<div class='row'>
+<div id='diceWordsCopyableContainer' class='cols'>
   <h3 class='card-title'>Copyable Text Variations</h3>
   <ul>
   <li><code id='diceWordsCopyableSpace'></code></li>
   <li><code id='diceWordsCopyableDash'></code></li>
   <li><code id='diceWordsCopyableNoGap'></code></li>
   </ul>
+</div>
+<div class='cols'>
+<ul id='diceWords' class='list-inline'></ul>
+</div>
 </div>
 
 <div id='entropyEstimateContainer' class='card card-block'>

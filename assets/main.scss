@@ -32,6 +32,9 @@
 	}
 }
 article {
+	.post-meta {
+		color: #707070;
+	}
 	.excerpt p::first-letter {
 		float: left;
 	    font-size: 3.7rem;

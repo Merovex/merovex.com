@@ -13,7 +13,7 @@ layout: single
           {% if page.subtitle %}<p class='subtitle'>{{page.subtitle}}</p>{%endif%}
       <p class="post-meta">
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-          <i class="fa fa-date" aria-hidden="true"></i>
+          <i class="fa fa-calendar" aria-hidden="true"></i>
           {% assign date_format = site.minima.date_format | default: "%e %B %Y" %}
           {{ page.date | date: date_format }}
         </time>

@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ba",
+				"background-color"
+			],
+			[
 				"Boy",
 				"BoyDetailComponent"
 			],
@@ -255,6 +259,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "_pages/diceware.md",
+			"settings":
+			{
+				"buffer_size": 5312,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_includes/diceware.html",
+			"settings":
+			{
+				"buffer_size": 1196,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_layouts/default.html",
+			"settings":
+			{
+				"buffer_size": 577,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_includes/belly-scripts.html",
+			"settings":
+			{
+				"buffer_size": 1102,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -438,10 +474,18 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/bwilson/Sites/merovex.com"
+		"/Users/bwilson/Sites/merovex.com",
+		"/Users/bwilson/Sites/merovex.com/_includes",
+		"/Users/bwilson/Sites/merovex.com/_layouts",
+		"/Users/bwilson/Sites/merovex.com/_site"
 	],
 	"file_history":
 	[
+		"/Users/bwilson/Sites/merovex.com/Rakefile",
+		"/Users/bwilson/Sites/merovex.com/_includes/header.html",
+		"/Users/bwilson/Sites/merovex.com/merovex.com.sublime-project",
+		"/Users/bwilson/Sites/merovex.com/assets/main.scss",
+		"/Users/bwilson/Sites/merovex.com/_layouts/post.html",
 		"/Users/bwilson/Writing-Projects/postal-marine-series.verki/Books/Luctation/docs/cast/danel-bophendze.md",
 		"/Users/bwilson/Writing-Projects/postal-marine-series.verki/Books/Luctation/docs/cast/capo-triona-maran.md",
 		"/Users/bwilson/Writing-Projects/postal-marine-series.verki/Books/Luctation/docs/cast/aren-dabrian.md",
@@ -564,16 +608,11 @@
 		"/Users/bwilson/Sites/merovex.github.io/_pages/books.md",
 		"/Users/bwilson/Sites/merovex.github.io/_includes/book-summary.html",
 		"/Users/bwilson/Sites/merovex.github.io/_books/imbroglio.md",
-		"/Users/bwilson/Sites/merovex.github.io/_posts/2016-08-26-introducing-korektu.markdown",
-		"/Users/bwilson/Sites/merovex.github.io/_posts/2014-11-16-inspiration-for-the-postal-marines.markdown",
-		"/Users/bwilson/Sites/merovex.github.io/_posts/2012-07-15-work-in-progress-bellicose.markdown",
-		"/Users/bwilson/Sites/merovex.github.io/_config.yml",
-		"/Users/bwilson/Sites/merovex.github.io/_posts/2016-05-21-copyright-work-product.markdown",
-		"/Users/bwilson/Sites/merovex.github.io/_posts/2014-11-11-sound-booth-three.markdown"
+		"/Users/bwilson/Sites/merovex.github.io/_posts/2016-08-26-introducing-korektu.markdown"
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -739,8 +778,165 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "_pages/diceware.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5312,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4411,
+								4412
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 17,
+								"count": 350,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"git_gutter_enabled": true,
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2268.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_includes/diceware.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1196,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 2,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"git_gutter_enabled": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_layouts/default.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 577,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 18,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"git_gutter_enabled": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "_includes/belly-scripts.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1102,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								691,
+								691
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 47,
+								"count": 6,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"git_gutter_enabled": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -804,6 +1000,38 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"diceware.",
+				"_includes/diceware.html"
+			],
+			[
+				"bell",
+				"_includes/belly-scripts.html"
+			],
+			[
+				"defa",
+				"_layouts/default.html"
+			],
+			[
+				"rake",
+				"Rakefile"
+			],
+			[
+				"dice",
+				"_pages/diceware.md"
+			],
+			[
+				"header",
+				"_includes/header.html"
+			],
+			[
+				"post",
+				"_layouts/post.html"
+			],
+			[
+				"main",
+				"assets/main.scss"
+			],
 			[
 				"home",
 				"_layouts/home.html"
@@ -935,10 +1163,6 @@
 			[
 				"moral",
 				"_writing-tips/moral-premise.md"
-			],
-			[
-				"rake",
-				"Rakefile"
 			],
 			[
 				"uwp",
@@ -1189,10 +1413,6 @@
 				"blog/index.html"
 			],
 			[
-				"bell",
-				"_includes/belly-scripts.html"
-			],
-			[
 				"screen",
 				"_sass/screen.scss"
 			],
@@ -1203,10 +1423,6 @@
 			[
 				"in",
 				"index.html"
-			],
-			[
-				"defa",
-				"_layouts/default.html"
 			],
 			[
 				"nav",
@@ -1242,10 +1458,6 @@
 			],
 			[
 				"po",
-				"_layouts/post.html"
-			],
-			[
-				"post",
 				"_layouts/post.html"
 			],
 			[
@@ -1299,22 +1511,6 @@
 			[
 				"defau",
 				"_layouts/default.html"
-			],
-			[
-				"ancestry",
-				"_drafts/an-afternoon-on-ancestry.markdown"
-			],
-			[
-				"archiv",
-				"_includes/archive_post.html"
-			],
-			[
-				"404",
-				"404.md"
-			],
-			[
-				"tags/in",
-				"tags/index.html"
 			]
 		],
 		"width": 0.0
