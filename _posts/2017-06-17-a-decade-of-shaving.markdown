@@ -11,8 +11,8 @@ photo:
   url: https://www.flickr.com/photos/mthomps/858748400
   license: under CC BY-SA 2.0
   caption: Classic Safety Razor
-date: 2017-06-17 11:28
-modified_at: 2017-06-17 11:28
+date: 2017-06-17 13:42
+modified_at: 2017-06-17 13:42
 created_at: 2017-06-17 11:28
 ---
 
