@@ -31,6 +31,36 @@
 		}
 	}
 }
+blockquote {
+	font-family: serif;
+	font-size: 1.2em;
+	font-style: italic;
+	margin: 0.25em 5%;
+	padding: 0.25em 40px;
+	line-height: 1.1;
+	position: relative;
+	color: #555;
+	&:before {
+		display: block;
+		content: "\201C";
+		font-size: 4em;
+		position: absolute;
+		left: -20px;
+		top: -10px;
+		color: #d32F2F;
+	}
+	cite {
+		color: #666;
+		font-size: 0.9rem;
+		display: block;
+		margin-top: 5px;
+		&:before {
+			content: "\2014 \2009";
+		}
+	}
+
+
+}
 .footnotes {
 	&:before {
 		content: "Footnotes";

@@ -122,6 +122,9 @@ collections:
   sales-charts:
     output: true
     permalink: /sales/:path/
+  sermon-notes:
+    output: true
+    permalink: /sermon-notes/:path/
   writing-logs:
     output: true
     permalink: /:collection/:path/
@@ -185,6 +188,13 @@ defaults:
     scope:
       path: ""
       type: "posts"
+    values:
+      layout: post
+      author: Ben Wilson
+  -
+    scope:
+      path: ""
+      type: "sermon-notes"
     values:
       layout: post
       author: Ben Wilson
