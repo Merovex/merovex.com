@@ -1,6 +1,7 @@
 ---
 title: '2015 Writing Progress'
 date: 2014-11-22 09:37
+amchart: true
 ---
 
 This is my writing progress chart for Calendar 2015. If you've seen my [2014 progress chart](/writing-logs/2014-progress), you'll see this is my second year running. I got the idea from [Jamie Rubin's relentless tracking of his progress](http://www.jamierubin.net/2014/11/16/how-i-used-rescuetime-to-baseline-my-activity-in-2014-and-set-goals-for-2015/).

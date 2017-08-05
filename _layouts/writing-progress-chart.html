@@ -1,7 +1,7 @@
 ---
 layout: wide
+amchart: true
 ---
-{% include amcharts/scripts.html %}
 
 {{ content }}
 
@@ -25,7 +25,7 @@ layout: wide
         average = data['average'];
         makeup = data['makeup'];
         hours = data['hours'];
-        wphSpeed(data['aveWPH'], hours, chartData);
+        // wphSpeed(data['aveWPH'], hours, chartData);
         makeChart('chart-daily', 'words', ['words','average','d_goal']);
         makeChart('chart-cumulative', 'goal', ['goal','total']);
         makeChart('chart-wpd', 'wph', ['wph','wph_ave']);

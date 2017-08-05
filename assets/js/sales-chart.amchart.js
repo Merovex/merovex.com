@@ -1,4 +1,5 @@
 ---
+layout: null
 ---
 function zoomChart() {chart.zoomToIndexes(chartData.length - 40, chartData.length -1) }
 function category_axis(c) {
@@ -56,7 +57,7 @@ AmCharts.ready(function () {
     sales.valueField = 'units'
     sales.lineThickness = 2;
     sales.lineColor = sales_color
-    
+
     sales.bullet = 'none'
     sales.bulletSize = 8
     sales.bulletBorderColor = '#FFFFFF'
