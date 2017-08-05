@@ -1,4 +1,5 @@
 ---
+layout: null
 ---
 String.prototype.upcase = function() {return this.charAt(0).toUpperCase() + this.slice(1); }
 var charts = [];
@@ -27,7 +28,7 @@ function buildGraph(field) {
     }
     var alphas      = {'column': [0.6,0.4], 'line': [0.4,0.4], 'trend':  [0.8,0.0], }
     var graph_type  = {'column': 'column', 'line': 'line', 'trend': 'line', }[graph[field]['type']]
-    return [{ 
+    return [{
             'balloonText': graph[field]['text'],
             'fillAlphas': alphas[graph[field]['type']][1],
             'id': field,
@@ -125,8 +126,8 @@ function makeChart(id, scrollbar, keys) {
         'startDuration': 1,
         'theme': 'none',
         'type': 'serial',
-        'valueAxes': [{ 'gridColor':'#FFFFFF', 'gridAlpha': 0.2, 'dashLength': 0 }],      
-    }); 
+        'valueAxes': [{ 'gridColor':'#FFFFFF', 'gridAlpha': 0.2, 'dashLength': 0 }],
+    });
     // charts.push(chart);
     // chart.addListener("dataUpdated-"+id, zoomChart);
 }
