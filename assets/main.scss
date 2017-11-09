@@ -1,41 +1,22 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+html, body { height: 100%; }
+
+main {
+	min-height: 79.8vh; height: auto !important;
+	padding-bottom: 1in;
+}
+
 .dev {
 	border: 1px solid red;
 }
-.social-networks {
-	width: 10%; padding-top: 1in; padding-left: 5%;
-	a.facebook {
-		background: #3b5998 !important;
-		color: white;
-		&:hover {
-			background: #96abd6 !important;
 
-		}
-	}
-	a.twitter {
-		background: #0084b4 !important;
-		color: white;
-		&:hover {
-			background: #4ed0ff !important;
-
-		}
-	}
-	a.google-plus {
-		background: #d34836 !important;
-		color: white;
-		&:hover {
-			background: #e5948a !important;
-
-		}
-	}
-}
 blockquote {
 	font-family: serif;
 	font-size: 1.2em;
 	font-style: italic;
-	margin: 0.25em 5%;
+	margin: 5%;
 	padding: 0.25em 40px;
 	line-height: 1.1;
 	position: relative;
@@ -48,6 +29,7 @@ blockquote {
 		left: -20px;
 		top: -10px;
 		color: #d32F2F;
+		color: #4B0082;
 	}
 	cite {
 		color: #666;
@@ -74,36 +56,21 @@ blockquote {
 		font-size: 2rem;
 	}
 }
-article {
-	.post-meta {
-		color: #707070;
-	}
-	.excerpt p::first-letter {
-		float: left;
-	    font-size: 3.7rem;
-	    line-height: 1.0;
-	    padding: 0 4px 0 3px;
-	    color: #ab2424;
-	}
-	img {width: 100%; }
-	.photo {
-		text-align: center;
-		font-size: 70%;
-		img {
-			border: 0.5rem solid #fcf8e3;
-			width: 80%;
-			margin-bottom: 1rem;
-			border-radius: 0.3rem;
+.page-content, article {
+	padding-top: 5vh;
+	a {
+		text-decoration: underline;
+		&:hover{
+			background-color: #eeadad;
+			text-decoration: none;
+			border-bottom: 1px solid #d32f2f;
 		}
 	}
+}
 
-	pre {
-		background: #fbf8f5;
-		padding: 4px;
-	}
-	h2, h3 {
-		color: #811b1b;
-	}
+h1, h2, h3 {
+	color: #811b1b;
+	color: #4B0082;
 }
 .img-card {
 	height: 300px;
@@ -123,87 +90,16 @@ article {
     }
     margin-bottom: 1rem;
 }
-
-
-html, body { height: 100%; }
-
-main {
-	min-height: 79.8vh; height: auto !important;
-	padding-bottom: 1in;
-}
 h1 small {
 	display: block;
 	font-size: 40%;
 }
-.page-content {
-	margin-top: 5vh;
-	a {
-		text-decoration: underline;
-		&:hover{ background-color: #eeadad; text-decoration: none; border-bottom: 1px solid #d32f2f;}
-	}
-}
-.navbar-light .navbar-nav .nav-link {
-	color: rgba(0,0,0,.7);
-}
-.navbar, footer {
-	background-color: #FFF;
-}
-.navbar {
-	border-top: 1vh solid #d32F2F;
-}
-.text-black {
-	color: #111 !important;
-}
-footer {
-	border-bottom: 1vh solid #d32F2F;
-	height: 8vh;
-	padding: 2vh 0;
-	text-align: center
-}
-a.navbar-brand {
-	fill: #d32f2f;
-}
-#hero {
-    position: relative;
-	height: 91vh;
-	margin: 0;
-	padding: 0;
-	background-color: transparent !important;
-	h2, p {color: white; text-shadow: 1px 1px 2px black;}
-	.img {
-	    position: absolute;
-	    left:0; top:0;
-	    min-height: 100vh;
-	    width: 100%;
-	    opacity: 0.7;
-	    background: url("https://s3.amazonaws.com/dausha/images/articles/Luctation.jpg") center center no-repeat;
-	    background-size: cover;
-	    z-index: -1;
-	}
-	.container {
-	  background-color: transparent;
-	  padding: 18vh 0 0 0;
-	}
-	.container .row {padding: 1.5rem; }
-}
-.btn-default {
-	border-color: #CCC;
-	background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
-}
-.btn-default.print {
-  color: #06C;
-  &:hover {
-  	background-image: linear-gradient(to bottom,#09F 0,#06C 100%);
-  	color: #FFF;
-  }
-}
-.btn-default.ebook {
-	color: #090;
-	&:hover {
-	  	background-image: linear-gradient(to bottom,#0C0 0,#090 100%);
-	  	color: #FFF;
-	  }
-}
-em {
-	padding: 0 0.3rem;
-}
+
+em { padding: 0 0.1rem; }
+
+@import "article";
+@import "buttons";
+@import "color";
+@import "hero";
+@import "navbar";
+@import "social-icons";

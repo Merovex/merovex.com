@@ -7,10 +7,10 @@ permalink: /diceware/
 
 [Diceware](https://web.archive.org/web/20161025134230/http://world.std.com/~reinhold/diceware.html) is used to create cryptographically strong passphrases. It is based on the principle that the truly random selection, based on rolls of dice, of words in a [wordlist](https://web.archive.org/web/20161025134230/http://world.std.com/~reinhold/diceware.wordlist.asc) can result in easily memorable passwords that are also extremely resistant to attack by even the most powerful adversaries. Passwords that are [six words or longer](https://web.archive.org/web/20161025134230/http://world.std.com/~reinhold/dicewarefaq.html#howlong) are thought to be safe for high security applications.
 
-<h3>Automatically Generated Words</h3>
-<p>
+### Automatically Generated Words
+
 Selecting one of these buttons will automatically generate the number of words selected.
-</p>
+
 
 <div class='btn-group' role='group' aria-label='Add random words group'>
   <button type='button' class='btn btn-warning genWordsButton' data-words='4' data-rolls='5' data-reset='1'>
@@ -42,10 +42,10 @@ Selecting one of these buttons will automatically generate the number of words s
   </button>
 </div>
 
-<h3>Manually Rolled Words</h3>
-<p>
+### Manually Rolled Words
+
 If you don't trust the Javascript randomization, you can roll your own. Just roll 5d6 to arrive at a number in the range of 11111 to 66666. Type that number into the text field below and hit enter.
-</p>
+
 <form id='addFiveDieRollWordForm' class='form-inline' data-toggle='validator'>
   <div class='form-group'>
     <label class='sr-only' for='addFiveDieRollWord'>Add Two or Five Die Roll</label>
@@ -58,7 +58,7 @@ If you don't trust the Javascript randomization, you can roll your own. Just rol
 </form>
 
 <div class='row'>
-<div id='diceWordsCopyableContainer' class='cols'>
+<div id='diceWordsCopyableContainer' class='col-8'>
   <h3 class='card-title'>Copyable Text Variations</h3>
   <ul>
   <li><code id='diceWordsCopyableSpace'></code></li>
@@ -66,7 +66,7 @@ If you don't trust the Javascript randomization, you can roll your own. Just rol
   <li><code id='diceWordsCopyableNoGap'></code></li>
   </ul>
 </div>
-<div class='cols'>
+<div class='col'>
 <ul id='diceWords' class='list-inline'></ul>
 </div>
 </div>
@@ -75,15 +75,15 @@ If you don't trust the Javascript randomization, you can roll your own. Just rol
   <h3 class='card-title'>Entropy</h3>
   <p class='card-text'>There are <code id='totalWords'></code> words in your password, which is
   ~<code id='totalEntropy'></code>
-  bits of entropy 
+  bits of entropy
   (<code>~12.92 bits/word</code>
-  and 
+  and
   <code>~5.16/symbol</code>).
-  That many words equates to an  effective keyspace of 
+  That many words equates to an  effective keyspace of
   ~<code id='crackTimeResultsHalfKeySpace'></code>
   possible keys (
   <code>(7776^words)/2</code>
-  which is 50% of the total key space since on average a key will be found in that reduced keyspace). Conservatively assuming an adversary can guess passwords at the rate of a trillion 
+  which is 50% of the total key space since on average a key will be found in that reduced keyspace). Conservatively assuming an adversary can guess passwords at the rate of a trillion
   (<code id='crackTimeResultsGuessesPerSecond'></code>) keys/second. An exhaustive brute-force search on half the total keyspace might take:</p>
 
   <ul>

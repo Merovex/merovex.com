@@ -18,13 +18,13 @@ Ben Wilson is a science fiction writer, husband, father, project manager, lover 
 
 ### Ben in 50-ish Words
 
-Ben Wilson is a science fantasy writer. He’s into history, human nature and religious studies. He is the author of the [Postal Marine Series](/books), though he eventually wants to write four novel series. His books are available on [Amazon](http://www.amazon.com/Ben-Wilson/e/B001JSB9SY) Ben lives in Arlington, Virginia with his wife three children, and Milo the friendly cat. 
+Ben Wilson is a science fantasy writer. He’s into history, human nature and religious studies. He is the author of the [Postal Marine Series](/books), though he eventually wants to write four novel series. His books are available on [Amazon](http://www.amazon.com/Ben-Wilson/e/B001JSB9SY) Ben lives in Arlington, Virginia with his wife three children, and Milo the friendly cat.
 
 ### Why I write
 
 > My life is about telling stories.
-> 
-> <span>Ben Wilson</span>
+>
+> <cite>Ben Wilson</cite>
 
 When friends and co-workers find that I write novels, I explain that I am a poor writer of bad Science Fiction. I don’t pretend to write the Great (Insert Nationality Here) Novel, or even the most provocative. I just write and try to improve.
 
@@ -34,7 +34,9 @@ The **Postal Marine Series** follows the careers of two Imperial Postal Marines,
 
 ## What Others Say About My Novels
 
-> I like Mondennio, but sometimes I want to slap some sense in him.<br><small>Dennis about Mondennio in _Scintilla_</small>
+> I like Mondennio, but sometimes I want to slap some sense in him.
+>
+> <cite>Dennis about Mondennio in _Scintilla_</cite>
 
 <!-- ## About Ben Wilson
 
@@ -50,11 +52,15 @@ The site is written in [HTML5](http://en.wikipedia.org/wiki/HTML5)
 with [Cascading Style Sheets (CSS)](http://en.wikipedia.org/wiki/Css)
 and delivered using [Jekyll](http://jekyllrb.com/).
 
-[Github](http://github.com) provides the Platform as a Service (PaaS), which lets one host for free if the traffic’s not too heavy. Hey, if [Netflix](http://netflix.com) can be the largest consumer of public cloud infrastructure, I can use Github.
+[Google Firebase](https://firebase.google.com/) provides the Platform as a Service (PaaS), which lets one host for free if the traffic’s not too heavy. Hey, if [Netflix](http://netflix.com) can be the largest consumer of public cloud infrastructure, I can use Github.
 
-The style was designed by Ben Wilson, using [Google’s Material Design](http://materializecss.com/about.html) as its foundation, rendered in [SASS](http://sass-lang.com/). (I had previously used Bootstrap and even liked the pending v4 release, but this was cleaner.) Non-standard web fonts are provided courtesy of [Google](http://www.google.com/webfonts).
+The style was designed by Ben Wilson, using [Bootstrap](getbootstrap.com) as its foundation, rendered in [SASS](http://sass-lang.com/).
+Non-standard web fonts are provided courtesy of [Google](http://www.google.com/webfonts). However, I'm using [font reboot](https://v4-alpha.getbootstrap.com/content/reboot/#native-font-stack) so the page looks native on your computer.
 
-Site content is authored on my local computer using [Sublime Text](http://www.sublimetext.com/). Jekyll lets me use [Markdown](http://daringfireball.net/projects/markdown/) in all its glory. Having previously used [PmWiki](http://pmwiki.org/) for web sites, being able to use pure Markdown is just plain fun. [Git](http://git-scm.com/) provides the transport mechanism to deliver the code to the web server.
+Site content is authored on my local computer using [Atom](https://atom.io/).
+Jekyll lets me use [Markdown](http://daringfireball.net/projects/markdown/) in all its glory.
+Having previously used [PmWiki](http://pmwiki.org/) for web sites, being able to use pure Markdown is just plain fun.
+[Git](http://git-scm.com/) provides the transport mechanism to deliver the code to the web server.
 
 Have I established my geek creds?
 

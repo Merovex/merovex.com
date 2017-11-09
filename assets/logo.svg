@@ -5,7 +5,7 @@ layout: null
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 72 56"
-       preserveAspectRatio="xMidYMid meet" class='logo'>
+       preserveAspectRatio="xMidYMid meet" class='logo' fill='#4B0082'>
       <g transform="translate(0,56) scale(0.100000,-0.100000)"
        stroke="none">
           <path d="M275 546 c-78 -34 -135 -121 -122 -186 7 -33 5 -35 -24 -20 -25 14

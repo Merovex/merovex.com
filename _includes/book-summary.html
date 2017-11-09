@@ -1,14 +1,19 @@
-<div class='row'>
-  <div class='col-md-6 col-lg-3 center-align'>
-    <img src='{{site.cdn_url}}/images/covers/{{ book.cover.angle }}' alt='' title='{{ book.title }} Cover Art' />
-  </div>
+<div class='card' style='margin-bottom: 0.5in; box-shadow: 0 1px 4px 0 rgba(0,0,0,.2)'>
+  <div class='card-body row'>
+    <div class='col-md-6 col-lg-3 center-align'>
+      <img src='{{site.cdn_url}}/images/covers/{{ book.cover.angle }}' alt='' title='{{ book.title }} Cover Art' />
+    </div>
 
-  <div class='col-md-6 col-lg-9'>
-    <h3 id='{{book.link}}'>{{ book.full-title }}</h3>
-    <p>{{book.content}}</p>
-
-    {% if book.released %}{% include booklink-group.html %}
-    <p>Find an error? Help me eradicate it by <a href='{{book.url}}'>reporting it to me</a>. Thanks!</p>
-    {% endif %}
+    <div class='col-md-6 col-lg-9'>
+      <h2 id='{{book.link}}'>{{ book.full-title }}</h2>
+      <p>{{book.content}}</p>
+      {% if book.released %}{% include booklink-group.html %}
+      {% endif %}
+    </div>
   </div>
+  {% if book.released %}
+  <div class='card-footer'>
+    <p class='text-center'>Find an error? Help me eradicate it by <a href='{{book.url}}'>reporting it to me</a>. Thanks!</p>
+  </div>
+  {% endif %}
 </div>

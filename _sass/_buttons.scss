@@ -1,0 +1,26 @@
+.btn {
+	background-color: #4B0082;
+	border-color:  #4B0082;
+	&:hover {
+		background-color: #683CB9;
+		border-color: #683CB9;
+	}
+}
+.btn-default {
+	border-color: #CCC;
+	background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+}
+.btn-default.print {
+  color: #06C;
+  &:hover {
+  	background-image: linear-gradient(to bottom,#09F 0,#06C 100%);
+  	color: #FFF;
+  }
+}
+.btn-default.ebook {
+	color: #090;
+	&:hover {
+	  	background-image: linear-gradient(to bottom,#0C0 0,#090 100%);
+	  	color: #FFF;
+	  }
+}

@@ -1,0 +1,30 @@
+article {
+	.post-meta {
+		color: #707070;
+	}
+	.excerpt p::first-letter {
+		float: left;
+	    font-size: 3.7rem;
+	    line-height: 1.0;
+	    padding: 0 4px 0 3px;
+	    color: #ab2424;
+			color: #4B0082;
+	}
+	img {width: 100%; }
+	.photo {
+		text-align: center;
+		font-size: 70%;
+		img {
+			border: 0.5rem solid #fcf8e3;
+			width: 80%;
+			margin-bottom: 1rem;
+			border-radius: 0.3rem;
+		}
+	}
+
+	pre {
+		background: #fcf8e3;
+		padding: 4px;
+	}
+
+}

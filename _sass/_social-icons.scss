@@ -1,0 +1,25 @@
+.social-networks {
+	width: 10%; padding-top: 1in; padding-left: 5%;
+	a.facebook {
+		background: #3b5998 !important;
+		color: white;
+		&:hover {
+			background: #96abd6 !important;
+
+		}
+	}
+	a.twitter {
+		background: #0084b4 !important;
+		color: white;
+		&:hover {
+			background: #4ed0ff !important;
+		}
+	}
+	a.google-plus {
+		background: #d34836 !important;
+		color: white;
+		&:hover {
+			background: #e5948a !important;
+		}
+	}
+}

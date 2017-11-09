@@ -1,0 +1,20 @@
+.navbar-light .navbar-nav .nav-link {
+	color: rgba(0,0,0,.7);
+}
+.navbar, footer {
+	background-color: #FFF;
+}
+.navbar {
+	border-top: 1vh solid #d32F2F;
+	border-top-color:  #4B0082;
+}
+.text-black {
+	color: #111 !important;
+}
+footer {
+	border-bottom: 1vh solid #d32F2F;
+	border-bottom-color:  #4B0082;
+	height: 8vh;
+	padding: 2vh 0;
+	text-align: center
+}
