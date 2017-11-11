@@ -11,7 +11,11 @@ main {
 .dev {
 	border: 1px solid red;
 }
-
+.wcag {
+	padding: 1em;
+}
+.wcag.big-text { font-size: 20px; }
+.wcag.normal-text { font-size: 14px !important; }
 blockquote {
 	font-family: serif;
 	font-size: 1.2em;

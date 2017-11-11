@@ -1,0 +1,244 @@
+---
+layout: page
+title: Contrast Maker
+created_at: 2017-11-11 13:17
+permalink: "/contrast-maker/"
+comments: true
+sharing: true
+footer: true
+sidebar: true
+date: 2017-11-11 13:17
+modified_at: 2017-11-11 13:17
+---
+
+<h2>Form</h2>
+<form id='contrast-maker'>
+  <fieldset>
+    <legend>Foreground Color</legend>
+    <input type="text" id="fhex" maxlength="7">
+  </fieldset>
+  <fieldset>
+    <legend>Background Color</legend>
+    <input type="text" id="bhex" maxlength="7">
+  </fieldset>
+
+
+</form>
+
+
+<div class="form-row">
+
+  <div class="form-group col-md-6">
+    <label for="exampleInputEmail1">WCAG 2.0-AA Normal Text Foreground Color</label>
+    <input type="text" class="form-control" id="normalAA-hex" aria-describedby="emailHelp" placeholder="Enter email">
+
+  </div>
+
+  <div class="form-group col-md-6">
+    <label for="exampleInputEmail1">WCAG 2.0-AA Large Text Foreground Color</label>
+    <input type="text" class="form-control" id="bigAA-hex" aria-describedby="emailHelp" placeholder="Enter email">
+
+  </div>
+
+
+<div class="form-group col-md-6">
+  <label for="exampleInputEmail1">WCAG 2.0-AAA Normal Text Foreground Color</label>
+  <input type="text" class="form-control" id="normalAAA-hex" aria-describedby="emailHelp" placeholder="Enter email">
+</div>
+
+<div class="form-group col-md-6">
+  <label for="exampleInputEmail1">WCAG 2.0-AAA Large Text Foreground Color</label>
+  <input type="text" class="form-control" id="bigAAA-hex" aria-describedby="emailHelp" placeholder="Enter email">
+</div>
+</div>
+
+<h2>WCAG 2.0 AA</h2>
+  <p class='big-text wcag' id="bigAA-text">This is an example of large-font text that is WCAG 2.0-AA Compliant with your color choices.</p>
+  <p class='normal-text wcag' id="normalAA-text">This is an example of normal-font text that is WCAG 2.0-AA Compliant with your color choices.</p>
+<hr>
+<h2>WCAG 2.0 AAA</h2>
+  <p class='big-text wcag' id="bigAAA-text">This is an example of large-font text that is WCAG 2.0-AAA Compliant with your color choices.</p>
+  <p class='normal-text wcag' id="normalAAA-text">This is an example of normal-font text that is WCAG 2.0-AAA Compliant with your color choices.</p>
+
+<script type="text/javascript">
+  var f, b;
+  fnord = {
+    "three" : [3.0, '#bigAA',             'bigAA-hex',      '#bigAA-text'     ],
+    "four"  : [4.5, '#normalAA, #bigAAA', 'normalAA-hex',   '#normalAA-text, #bigAAA-text'  ],
+    "seven" : [7.0, '#normalAAA',         'normalAAA-hex',  '#normalAAA-text' ],
+  }
+  function setVal(key,value) { $("input[id="+key+"]").val(value); }
+  function getSVal(key) { return $("input[id^='"+key+"']").val(); }
+  function comply(){
+    f = getSVal('fhex')
+    b = getSVal('bhex')
+    if (f.length < 7) {return;}
+    if (b.length < 7) {return;}
+
+    makeContrast('three')
+    makeContrast('four')
+    makeContrast('seven')
+    setVal('bigAAA-hex',getSVal('normalAA-hex'))
+  }
+  // Intercept form submit
+	$('#contrast-maker').submit(function(e) {
+		e.preventDefault();
+	});
+  function getRatio(a,b,r) {
+    var L1 = getL(a), L2 = getL(b)
+    return (Math.max(L1, L2) + 0.05) / (Math.min(L1, L2) + 0.05);
+  }
+  function makeContrast(id) {
+    r = fnord[id][0]
+    var l = 50
+    var a = f
+    console.log("Start: " + getRatio(a,b))
+    while (r > getRatio(a,b) && (l > 1 && l < 99)) {
+      x = changeHue(a,b);
+      a = x[0]; l = x[1]
+      console.log(" - During: " + getRatio(a,b) + " A: " + a + ' L: ' + l)
+    }
+    console.log("END: " + getRatio(a,b) + " A: " + a + ' L: ' + l)
+
+    setVal(fnord[id][2],a)
+    $(fnord[id][3]).css({'color': a, 'background-color': b});
+  }
+  function checkContrast(a) {
+  	var L1 = getL(a), L2 = getL(b), ratio = (Math.max(L1, L2) + 0.05) / (Math.min(L1, L2) + 0.05);
+  	$('#ratio').html('<b>' + (Math.round(ratio * 100) / 100).toFixed(2) + '</b>:1');
+  	if (ratio >= 4.5) {
+  		$('#normalAA, #bigAAA').attr('class', 'pass').text('Pass');
+  		$('#ratioContainer').attr('class', 'pass');
+  	} else {
+  		$('#normalAA, #bigAAA').attr('class', 'fail').text('Fail');
+  		$('#ratioContainer').removeClass('pass');
+  	}
+  	if (ratio >= 3) {
+  		$('#bigAA').attr('class', 'pass').text('Pass');
+  	} else {
+  		$('#bigAA').attr('class', 'fail').text('Fail');
+      changeHue(f);
+  	}
+  	if (ratio >= 7) {
+  		$('#normalAAA').attr('class', 'pass').text('Pass');
+  	} else {
+  		$('#normalAAA').attr('class', 'fail').text('Fail');
+  	}
+  }
+  function changeHue(a,z) {
+    c = 1 // Foreground Lighter
+    if (getL(a) < getL(z)) { c = -1 }
+    HSL = RGBtoHSL(getRGB(a.substr(1, 2)), getRGB(a.substr(3, 2)), getRGB(a.substr(-2)));
+    // console.log("Before HUE: " + f + ":"+HSL)
+
+    RGB = HSLtoRGB(HSL[0], HSL[1], (HSL[2] + c))
+    for (var i = 0; i < 3; i++) {
+  		RGB[i] = (RGB[i] >= 16) ? RGB[i].toString(16) : '0' + RGB[i].toString(16);
+  	}
+    a = RGB[0].toString(16) + RGB[1].toString(16) + RGB[2].toString(16);
+    a = "#" + a.toUpperCase();
+    // console.log("After HUE: " + a + ":"+HSL)
+    return [a, HSL[2] + c ]
+  }
+  function findRGB(q1, q2, hue) {
+  	if (hue > 360) hue -= 360;
+  	if (hue < 0) hue += 360;
+  	if (hue < 60) return (q1 + (q2 - q1) * hue / 60);
+  	else if (hue < 180) return(q2);
+  	else if (hue < 240) return(q1 + (q2 - q1) * (240 - hue) / 60);
+  	else return(q1);
+  }
+  function HSLtoRGB(H, S, L) {
+  	var p1, p2;
+  	L /= 100;
+  	S /= 100;
+  	if (L <= 0.5) p2 = L * (1 + S);
+  	else p2 = L + S - (L * S);
+  	p1 = 2 * L - p2;
+  	if (S == 0) {
+  		R = G = B = L;
+  	} else {
+  		R = findRGB(p1, p2, H + 120);
+  		G = findRGB(p1, p2, H);
+  		B = findRGB(p1, p2, H - 120);
+  	}
+  	return [Math.round(R *= 255), Math.round(G *= 255), Math.round(B *= 255)];
+  };
+  function RGBtoHSL(r, g, b) {
+  	var Min, Max;
+  	r = (r / 51) * 0.2;
+  	g = (g / 51) * 0.2;
+  	b = (b / 51) * 0.2;
+  	if (r >= g) {
+  		Max = r;
+  	} else {
+  		Max = g;
+  	}
+  	if (b > Max) {
+  		Max = b;
+  	}
+  	if (r <= g) {
+  		Min = r;
+  	} else {
+  		Min = g;
+  	}
+  	if (b < Min) {
+  		Min = b;
+  	}
+  	L = (Max + Min) / 2;
+  	if (Max == Min) {
+  		S = H = 0;
+  	} else {
+  		if (L < 0.5) {
+  			S = (Max - Min) / (Max + Min);
+  		} else {
+  			S = (Max - Min) / (2 - Max - Min);
+  		}
+  		if (r == Max) {
+  			H = (g - b) / (Max - Min);
+  		}
+  		if (g == Max) {
+  			H = 2 + ((b - r) / (Max - Min));
+  		}
+  		if (b == Max) {
+  			H = 4 + ((r - g) / (Max - Min));
+  		}
+  	}
+  	H = Math.round(H * 60);
+  	if (H < 0) {
+  		H += 360;
+  	}
+  	if (H >= 360) {
+  		H -= 360;
+  	}
+  	return [H, Math.round(S * 100), Math.round(L * 100)];
+  }
+  function getRGB(c) {
+  	try {
+  		var c = parseInt(c, 16);
+  	} catch (err) {
+  		var c = false;
+  	}
+  	return c;
+  }
+  function getsRGB(c) {
+  	c = getRGB(c) / 255;
+  	c = (c <= 0.03928) ? c / 12.92 : Math.pow(((c + 0.055) / 1.055), 2.4);
+  	return c;
+  }
+  function getL(c) {
+  	return (0.2126 * getsRGB(c.substr(1, 2)) + 0.7152 * getsRGB(c.substr(3, 2)) + 0.0722 * getsRGB(c.substr(-2)));
+  }
+  function update() {
+    setVal('fhex',f)
+    setVal('bhex',b)
+  }
+  function initContrastCompliance() {
+  	f = '#CCCCFF', b = '#444444';
+  	$('#fhex').keyup(function(event){ comply(); });
+    $('#bhex').keyup(function(event){ comply(); });
+    update();
+    comply();
+  }
+  initContrastCompliance();
+</script>
