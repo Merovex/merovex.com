@@ -17,14 +17,14 @@ modified_at: 2017-11-11 13:17
     <legend>Foreground Color</legend>
     <input type="text" id="fhex" maxlength="7">
   </fieldset>
+  <hr>
   <fieldset>
     <legend>Background Color</legend>
     <input type="text" id="bhex" maxlength="7">
+    <small id="background-text" class="form-text"></small>
   </fieldset>
-
-
 </form>
-
+<hr>
 
 <div class="form-row">
 
@@ -74,7 +74,11 @@ modified_at: 2017-11-11 13:17
     b = getSVal('bhex')
     if (f.length < 7) {return;}
     if (b.length < 7) {return;}
-
+    wtf = ''
+    if (isntCompliableBackground()) {
+      wtf = 'This background will not/not yield compliant foreground';
+    }
+    $("#background-text").text(wtf)
     makeContrast('three')
     makeContrast('four')
     makeContrast('seven')
@@ -124,6 +128,16 @@ modified_at: 2017-11-11 13:17
   	} else {
   		$('#normalAAA').attr('class', 'fail').text('Fail');
   	}
+  }
+  function isntCompliableBackground() {
+    // If foreground is greater than background, would FFFFFF foreground pass ratio?
+    // if foreground is less than background,, would 000000 pass ratio?
+    // Just look at Ratio 7.
+    bug = '#FFFFFF'
+    if (getL('#777777') < getL(b)) { bug = '#000000' }
+    x = (7.0 > getRatio(bug,b))
+    console.log("- WTF: " + x + " Ratio: "  + getRatio(bug,b))
+    return x
   }
   function changeHue(a,z) {
     c = 1 // Foreground Lighter
