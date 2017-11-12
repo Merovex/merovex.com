@@ -247,7 +247,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 #----------------------------------------
 # Plugins
 #----------------------------------------
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
