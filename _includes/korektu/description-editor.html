@@ -1,0 +1,42 @@
+<!-- Description Editor -->
+<br>
+    <div class="form-group">
+      <h4 for='textarea1'>Correction Description</h4>
+      <nav class="nav nav-tabs nav-fill" id="myList" role="tablist">
+        <a style='text-decoration: none;' class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="nav-home" aria-selected="true">Input</a>
+        <a style='text-decoration: none;' class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="nav-profile" aria-selected="false">Preview</a>
+      </nav>
+      <div class="tab-content">
+        <div class="tab-pane active" id="home" role="tabpanel">
+          <textarea required  class='form-control' form-rows="5" style='padding: 0.5em; border: 1px solid #DDD; min-height: 15em;' rows='15' name="text" id="fix_text" data-ng-model="text" oninput="this.editor.update()"></textarea>
+        </div>
+        <div class="tab-pane" id="profile" role="tabpanel">
+          <div id="preview" sd-model-to-html="text" style='padding: 0.5em; border: 1px solid #DDD; min-height: 15em;'></div>
+        </div>
+      </div>
+        <p><small class='text-muted'>
+            Note: You can use <a href='https://guides.github.com/features/mastering-markdown/' target='_blank'>Git-Flavored Markdown</a> for formatting.
+        </small></p>
+    </div>
+
+    <script src='https://cdn.rawgit.com/showdownjs/showdown/1.4.2/dist/showdown.min.js'></script>
+    <script>
+    			$('#myList a').on('click', function (e) {
+    				e.preventDefault()
+    				$(this).tab('show')
+    			})
+          function Editor(input, preview) {
+            this.update = function () {
+              var conv = new showdown.Converter();
+              preview.innerHTML = conv.makeHtml(input.value);
+            };
+            input.editor = this;
+            this.update();
+          }
+          var $ = function (id) { return document.getElementById(id); };
+          new Editor($("fix_text"), $("preview"));
+          $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+          })
+    </script>
+<!-- end Description Editor -->

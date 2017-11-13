@@ -1,0 +1,9 @@
+<label for="edition" class='col'>Which Edition are you Reading?</label>
+<div class="col">
+  <select required id='edition' name='edition' class='form-control' data-toggle="tooltip" data-placement="bottom" title="The edition is found on the copyright page. When in doubt, select the newest edition.">
+    <option disabled='disabled' selected='selected' value=''>Please select an edition</option>
+    {% for e in page.editions %}
+      <option value='{{e}}'>{{page.book}} v.{{e}}</option>
+    {%endfor%}
+  </select>
+</div>

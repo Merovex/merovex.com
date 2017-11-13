@@ -1,102 +1,27 @@
 ---
-layout: page
+layout: single
 eraru: true
 ---
-<!-- whispering-taiga-70891.herokuapp.com -->
-	<form id="new_fix" action="http://whispering-taiga-70891.herokuapp.com/" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
-	  <div class='form-group'>
-      <input type='hidden' name='book' id='book' value='{{page.title}}' />
-      <input type='hidden' name='repo' id='repo' value='{{page.repo}}' />
+	<!-- whispering-taiga-70891.herokuapp.com -->
+	<form id="new_fix" action="http://whispering-taiga-70891.herokuapp.com/" accept-charset="UTF-8" method="post">
+	  <input name="utf8" type="hidden" value="&#x2713;">
+    <input type='hidden' name='book' id='book' value='{{page.title}}'>
+    <input type='hidden' name='repo' id='repo' value='{{page.repo}}'>
+
   		<h3>Where in <em>{{page.title}}</em> are you commenting on?</h3>
-  		<div class='row'>
-  		  <div class='col-md-6 col-sm-12'>
-  		    <select required id='edition' name='edition' class='form-control'>
-  		      <option disabled='disabled' selected='selected' value=''>Which Edition are you Reading?</option>
-  		      {% for e in page.editions %}
-  		        <option value='{{e}}'>{{page.book}} v.{{e}}</option>
-  		      {%endfor%}
-  		    </select>
-          <p><small class='text-muted'>Note: The edition is found on the copyright page</small></p>
-  		  </div>
-  		</div>
-    </div>
-    <div class='row'>
-        <div class='col-md-6 col-sm-12'>
-          <label for='icon_prefix'>Page or Location</label>
-          <input class='form-control' required min="1" step="any" type="number" name="location" id="location" />
+		  <div class='form-group row'>{% include korektu/edition.html %}</div>
+      <div class='form-group row'>{% include korektu/location.html %}</div>
+			<div class='form-group row'>{% include korektu/format-options.html %}</div>
+			<div class='form-group row'>{% include korektu/correction-options.html %}</div>
+			<div class='form-group row'>{% include korektu/notes.html %}</div>
 
-          <p><small class='text-muted'>
-            Note: If Paperback, then you can provide the line as a decimal. (e.g. 12.21 is page 12, line 21)
-          </small></p>
-        </div>
-        <div class="col-md-6 col-sm-12 align-center">
-          <div class="form-check">
-            <label class="form-check-label">
-              <input class="form-check-input" type="radio" name="pbk" id="exampleRadios1" value="off" checked>
-              Kindle
-            </label>
-          </div>
-          <div class="form-check">
-            <label class="form-check-label">
-              <input class="form-check-input" type="radio" name="pbk" value="on">
-              Paperback
-            </label>
-          </div>
-        </div>
-<hr>
-  <div>
-  	<h3>What correction are you sharing?</h3>
-  	<div class='row'>
-  	  <div class='form-group col-md-6 col-sm-12'>
-  	    <select required id='label' name='label' class='form-control'>
-  	      <option disabled='disabled' selected='selected' value=''>Select type of correction</option>
-  	      <optgroup label='Technical Correction'>
-  	        <option value='TYPO'>Typo</option>
-  	        <option value='SYNTAX'>Grammar</option>
-  	        <option value='ENHANCEMENT'>Suggestion</option>
-  	      </optgroup>
-  	      <optgroup label='Readability Correction'>
-  	        <option value='IMPLAUSIBILITY'>Hard to Believe</option>
-  	        <option value='CONFUSION'>Confusing</option>
-  	        <option value='DULLNESS'>Boring</option>
-  	      </optgroup>
-  	    </select>
-  	  </div>
-  	</div>
-
-    <div class="form-group">
-      <h3 for='textarea1'>Description</h3>
-			<nav class="nav nav-tabs nav-fill" id="myList" role="tablist">
-			  <a style='text-decoration: none;' class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="nav-home" aria-selected="true">Input</a>
-			  <a style='text-decoration: none;' class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="nav-profile" aria-selected="false">Preview</a>
-			</nav>
-			<div class="tab-content">
-			  <div class="tab-pane active" id="home" role="tabpanel">
-					<textarea required  class='form-control' rows="5" style='padding: 0.5em; border: 1px solid #DDD;' name="text" id="fix_text" data-ng-model="text" oninput="this.editor.update()"></textarea>
-				</div>
-			  <div class="tab-pane" id="profile" role="tabpanel">
-			    <div id="preview" sd-model-to-html="text" style='padding: 0.5em; border: 1px solid #DDD; min-height: 15em;'></div>
-				</div>
-			</div>
-        <p><small class='text-muted'>
-            Note: You can use <a href='https://guides.github.com/features/mastering-markdown/' target='_blank'>Git-Flavored Markdown</a> for formatting.
-        </small></p>
-    </div>
-<hr>
-    <div class='form-group'>
-      <h4>Can I contact you with questions or credit your find?</h4>
-      <div class='row form-control'>
-        <div class='col-md-6 col-sm-12'>
-          <input type="text" name="name" id="fix_name" />
-          <label for='icon_prefix'>Name (optional)</label>
-        </div>
-        <div class='col-md-6 col-sm-12'>
-          <input type="email" name="email" id="fix_email" />
-          <label for='icon_prefix'>Email (optional)</label>
-        </div>
-      </div>
-    </div><!-- /card -->
-  	<div class='row'>
+			<hr><br>
+			{% include korektu/credit.html %}
+      
+			<hr><br>
+			{% include korektu/description-editor.html %}
+			<hr><br>
+  	<div class='form-row'>
   	  <div class='g-recaptcha col' data-sitekey='6LdReyQTAAAAANSlGTjR5bKSmiU4Y3XdCuOmbuvx'></div>
   	  <div class='col'>
   	    <button id='submit' class='btn btn-primary'>
@@ -106,25 +31,3 @@ eraru: true
   	  </div>
   	</div>
 	</form>
-
-<script src='https://cdn.rawgit.com/showdownjs/showdown/1.4.2/dist/showdown.min.js'></script>
-<script>
-			$('#myList a').on('click', function (e) {
-				e.preventDefault()
-				$(this).tab('show')
-			})
-			$('#navlist a').on('click', function (e) {
-				e.preventDefault()
-				$(this).tab('show')
-			})
-      function Editor(input, preview) {
-        this.update = function () {
-          var conv = new showdown.Converter();
-          preview.innerHTML = conv.makeHtml(input.value);
-        };
-        input.editor = this;
-        this.update();
-      }
-      var $ = function (id) { return document.getElementById(id); };
-      new Editor($("fix_text"), $("preview"));
-</script>
