@@ -73,6 +73,7 @@ google_site_verification  :
 bing_site_verification    :
 alexa_site_verification   :
 yandex_site_verification  :
+google_cse_id             :  009424539769707022597:czl8a6z5ktq
 
 #----------------------------------------
 # Build settings
@@ -253,6 +254,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-google_cse
 
 # mimic GitHub Pages with --safe
 whitelist:

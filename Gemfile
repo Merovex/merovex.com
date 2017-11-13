@@ -26,8 +26,9 @@ group :jekyll_plugins do
    gem 'jemoji'
    gem 'classifier-reborn'
    gem 'jekyll-redirect-from'
+   gem 'jekyll-google_cse'
 end
-gem 'html-proofer'
+# gem 'html-proofer'
 gem 'rake'
 # group :development do
 	gem 'rb-fsevent', '~> 0.9'
