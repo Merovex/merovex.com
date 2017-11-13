@@ -3,7 +3,7 @@ layout: page
 eraru: true
 ---
 <!-- whispering-taiga-70891.herokuapp.com -->
-	<form id="new_fix" action="http://whispering-taiga-70891.herokuapp.com/" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /> 
+	<form id="new_fix" action="http://whispering-taiga-70891.herokuapp.com/" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
 
   <div class='form-group'>
       <input type='hidden' name='book' id='book' value='{{page.title}}' />
@@ -26,7 +26,7 @@ eraru: true
         <div class='col-md-6 col-sm-12'>
           <label for='icon_prefix'>Page or Location</label>
           <input class='form-control' required min="1" step="any" type="number" name="location" id="location" />
-          
+
           <p><small class='text-muted'>
             Note: If Paperback, then you can provide the line as a decimal. (e.g. 12.21 is page 12, line 21)
           </small></p>
@@ -69,17 +69,18 @@ eraru: true
 
     <div class="form-group">
       <h3 for='textarea1'>Description</h3>
-        <ul class="nav nav-tabs">
-          <li class="nav-item"><a class='nav-link active' style='text-decoration: none;' href="#fix_text">Input</a></li>
-          <li class="nav-item"><a class='nav-link' href="#preview">Preview</a></li>
-        </ul>
-      
-  	
-  	  
-  	    <textarea required  class='form-control' rows="5" style='padding: 0.5em; border: 1px solid #DDD;' name="text" id="fix_text" data-ng-model="text" oninput="this.editor.update()"></textarea>
-  	   
-        <div id="preview" sd-model-to-html="text" style='padding: 0.5em; border: 1px solid #DDD; min-height: 5em;'></div>
-
+			<nav class="nav nav-tabs nav-fill" id="myList" role="tablist">
+			  <a style='text-decoration: none;' class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="nav-home" aria-selected="true">Input</a>
+			  <a style='text-decoration: none;' class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="nav-profile" aria-selected="false">Preview</a>
+			</nav>
+			<div class="tab-content">
+			  <div class="tab-pane active" id="home" role="tabpanel">
+					<textarea required  class='form-control' rows="5" style='padding: 0.5em; border: 1px solid #DDD;' name="text" id="fix_text" data-ng-model="text" oninput="this.editor.update()"></textarea>
+				</div>
+			  <div class="tab-pane" id="profile" role="tabpanel">
+			    <div id="preview" sd-model-to-html="text" style='padding: 0.5em; border: 1px solid #DDD; min-height: 15em;'></div>
+				</div>
+			</div>
         <p><small class='text-muted'>
             Note: You can use <a href='https://guides.github.com/features/mastering-markdown/' target='_blank'>Git-Flavored Markdown</a> for formatting.
         </small></p>
@@ -101,7 +102,6 @@ eraru: true
   	<div class='row'>
   	  <div class='g-recaptcha col' data-sitekey='6LdReyQTAAAAANSlGTjR5bKSmiU4Y3XdCuOmbuvx'></div>
   	  <div class='col'>
-
   	    <button id='submit' class='btn btn-primary'>
           <i class="fa fa-send"></i>
           Submit
@@ -112,6 +112,14 @@ eraru: true
 
 <script src='https://cdn.rawgit.com/showdownjs/showdown/1.4.2/dist/showdown.min.js'></script>
 <script>
+			$('#myList a').on('click', function (e) {
+				e.preventDefault()
+				$(this).tab('show')
+			})
+			$('#navlist a').on('click', function (e) {
+				e.preventDefault()
+				$(this).tab('show')
+			})
       function Editor(input, preview) {
         this.update = function () {
           var conv = new showdown.Converter();
