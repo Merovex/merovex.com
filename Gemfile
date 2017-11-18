@@ -27,6 +27,7 @@ group :jekyll_plugins do
    gem 'jekyll-redirect-from'
   #  gem 'classifier-reborn'
 end
+gem 'stringex'
 gem 'html-proofer'
 gem 'rake'
 gem 'fastimage'
