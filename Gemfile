@@ -19,29 +19,18 @@ gem 'jekyll'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
-   gem 'jekyll-mentions'
+  #  gem 'jekyll-mentions'
    gem 'jekyll-paginate'
    gem 'jekyll-sitemap'
    gem 'jekyll-gist'
    gem 'jemoji'
-   gem 'classifier-reborn'
    gem 'jekyll-redirect-from'
-   gem 'jekyll-google_cse'
+  #  gem 'classifier-reborn'
 end
-# gem 'html-proofer'
+gem 'html-proofer'
 gem 'rake'
-# group :development do
-	gem 'rb-fsevent', '~> 0.9'
-	gem 'rb-inotify'
-# end
-# gem 'jekyll-tagging-related_posts'
-gem 'uglifier'
-gem 'stringex'
-gem 'sinatra'
-gem 'rack-rewrite'
 gem 'fastimage'
 gem 'asin'
 gem 'aws-sdk'
-# gem 'coderay'
 gem 'ra11y'
 gem 'kramdown'
