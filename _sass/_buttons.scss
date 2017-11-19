@@ -1,9 +1,9 @@
 .btn {
-	background-color: #4B0082;
-	border-color:  #4B0082;
+	background-color: $base-color;
+	border-color:  $base-color;
 	&:hover {
-		background-color: #683CB9;
-		border-color: #683CB9;
+		background-color: lighten( $base-color, 30% );
+		border-color: lighten( $base-color, 30% );
 	}
 }
 .btn-default {

@@ -1,46 +1,52 @@
-article {
-	.post-meta {
-		color: #707070;
-	}
-	.excerpt p::first-letter {
-		float: left;
-	    font-size: 3.7rem;
-	    line-height: 1.0;
-	    padding: 0 4px 0 3px;
-	    color: #ab2424;
-			color: #4B0082;
-	}
-	img {width: 100%; }
-	.photo {
-		text-align: center;
-		font-size: 70%;
-		img {
-			border: 0.5rem solid #fcf8e3;
-			width: 80%;
-			margin-bottom: 1rem;
-			border-radius: 0.3rem;
-		}
-	}
+.page-content, article {
+  padding-top: 3vh;
+  a {
+    text-decoration: underline;
+    &:hover{
+      text-shadow: 0 0 2em $base-color-lightened;
+      color: $base-color;
+    }
+  }
+  .post-meta {color: $gray; }
+  .excerpt p::first-letter {
+    float: left;
+    font-size: 3.7rem;
+    line-height: 1.0;
+    padding: 0 4px;
+    color: $base-color;
+  }
+  img {width: 100%; }
+  .photo {
+    text-align: center;
+    font-size: 0.7rem;
+    font-style: italic;
+    color: $gray;
+    img {
+      width: 90%;
+      margin-bottom: 1rem;
+      border-radius: 0.3rem;
+    }
+  }
 
-	pre {
-		background: #fcf8e3;
-		padding: 4px;
-	}
+  pre {
+    background: #fcf8e3;
+    padding: 4px;
+  }
 
 }
 .footnotes {
-	margin-top: 0.5in;
-	font-size: 0.8rem;
-	border-top: 1px solid #4B0082;
-	&:before {
-		content: "Footnotes";
-		color: #4B0082 !important;
-		margin-top: 0;
-		margin-bottom: .5rem;
-		margin-bottom: 0.5rem;
-		font-family: inherit;
-		font-weight: 500;
-		color: inherit;
-		font-size: 1.3rem;
-	}
+  margin-top: 0.5in;
+  font-size: 0.8rem;
+  border-top: 1px solid #4B0082;
+  &:before {
+    content: "Footnotes";
+    color: #4B0082 !important;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    color: inherit;
+    font-size: 1.3rem;
+  }
 }

@@ -1,9 +1,15 @@
 ---
 layout: default
 ---
-<div id="hero" class="jumbotron  jumbotron-fluid">
+{% include header.html %}
+<div id="hero" class="jumbotron jumbotron-fluid d-print-none">
   <div class='img'></div>
   <div class="container">
+      <div class="row">
+        <div class='col'>
+        <p class='display-4 text-capitalize white-text z-index-2 text-center'>Struggling orphan becomes <br>Postal Marines' Greatest Hero</p>
+        </div>
+      </div>
       <div class='row'>
         <div class='col col-lg-5'>
         <img src="https://dausha.s3.amazonaws.com/images/bellicose-flat-sm.png"
@@ -11,14 +17,41 @@ layout: default
        data-animation="animated fadeInLeft">
         </div>
         <div class='col col-lg-7'>
-          <h2 class='white-text z-index-2'>Struggling orphan becomes Postal Marines' Greatest Hero</h2>
           <p class='tagline white-text z-index-1 lead hide-on-small-only'>
-            Desperate to succeed, Bophendze embedded an ancient artificial intelligence in his brain. Litovio left a promising career in the Navy to join the Postal Marines. They both must fight to survive the epic Battle of Tannenberg Gate. But for Bophendze, the real struggle is all in his head.
+            Desperate, Bophendze embedded an ancient artificial intelligence in his brain. Litovio abandoned his promising career in the Navy to serve the Postal Marines. Together, they struggle to survive the epic Battle of Tannenberg Gate.
           </p>
-          <a href="http://amzn.to/1K4jaYV" id="download-button" class="btn btn-primary btn-lg">Read <em>Bellicose</em> Now</a>
+          <p class="tagline white-text z-index-1 lead hide-on-small-only">For Bophendze, the real fight is all in his head.</p>
+          <p><a href="http://amzn.to/1K4jaYV" id="download-button" class="btn btn-primary btn-lg">Read <em>Bellicose</em> Now</a></p>
         </div>
       </div>
   </div>
 </div>
+<section id="books">
+  <div class="container">
+    <div class='row'>
+      <div class='col-lg-10 offset-lg-1'>
+        <h1>Postal Marine Series</h1>
+{% assign books = site.books | sort: 'series' %}
+{% for book in books %}
 
-{% include header.html %}
+{% unless book.hidden %}
+{% include book-summary.html %}
+{% endunless %}
+{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+<script type='text/javascript'>
+  $(document).ready(function() {
+  var s = $('#hero').innerHeight() - 0;
+  $(window).on('scroll load', function() {
+    if ($(window).scrollTop() < s) {
+       $('#header').addClass('scrolled');
+    }
+    else {
+       $('#header').removeClass('scrolled');
+    }
+  });
+})
+</script>

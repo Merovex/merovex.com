@@ -28,7 +28,7 @@ layout: single
     <div class='excerpt lead'>
       {{ content | split:'<!-- more -->' | first |markdownify}}
     </div>
-    <figure class='photo'>
+    <figure class='photo d-print-none'>
       <img src='{{site.cdn_url}}/images/articles/{{page.photo["image"]}}' alt=""/>
       <div>{{page.photo['caption']}} (Photo: <a href="{{page.photo['url']}}">{{page.photo['creator']}}</a> {{page.photo['license']}}.)</div>
     </figure>
@@ -38,14 +38,14 @@ layout: single
     </div>
     <aside role='complementary' class='post-footer'>
         {% if page.series %}<hr>{%include article-series.html %}{%endif%}
-        <hr>
-        <div class='alert'>
+        <hr class='d-print-none'>
+        <div class='alert d-print-none'>
         <h4><i class="fa fa-comment" aria-hidden="true"></i> Want to Share Your Reaction?</h4>
         <p>If you want to discuss this article, find the relevant posting on my <a href='https://www.facebook.com/MerovexPress/'>Facebook</a> page. Thanks!
         </p>
         </div>
-        <hr>
-        <div class='blog-subscribe alert alert-secondary text-black'>
+        <hr class='d-print-none'>
+        <div class='blog-subscribe alert alert-secondary text-black d-print-none'>
           <h4><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like This Post?</h4>
           <p>Sign up for my blog updates and never miss a post.</p>
           {% include mailchimp.html %}

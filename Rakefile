@@ -1,5 +1,3 @@
-
-
 @cwd = File.expand_path(".")
 @data_dir = "#{@cwd}/_data"
 

@@ -5,7 +5,7 @@
     </div>
 
     <div class='col-md-6 col-lg-9'>
-      <h2 id='{{book.link}}'>{{ book.full-title }}</h2>
+      <h3 id='{{book.link}}'>{{ book.full-title }}</h3>
       <p>{{book.content}}</p>
       {% if book.released %}{% include booklink-group.html %}
       {% endif %}

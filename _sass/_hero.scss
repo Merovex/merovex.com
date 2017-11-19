@@ -1,12 +1,10 @@
 #hero {
   position: relative;
-  border: 1px solid red;
 	height: 100vh;
-	margin: 0;
-  margin-top: -60px;
+	margin: -60px 0 1in 0;
 	padding: 0;
 	background-color: #000 !important;
-	h2, p {color: white; text-shadow: 1px 1px 2px black;}
+	h2, p {color: white; text-shadow: 1px 1px 1px black;}
 	.img {
 	    position: absolute;
 	    left:0; top:0;
@@ -19,7 +17,7 @@
 	}
 	.container {
 	  background-color: transparent;
-	  padding-top: 35vh;
+	  padding-top: 25vh;
     z-index: 2;
 	}
 	.container .row {padding: 1.5rem; }
