@@ -4,7 +4,6 @@ title: "Savage Worlds Skills List"
 date: 2013-10-20 09:27
 permalink: /savage-worlds/skills/
 ---
-{% include logo-contest.html %}
 
 <h2>Skill List</h2>
 <table class='bordered'>
