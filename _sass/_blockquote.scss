@@ -1,0 +1,26 @@
+blockquote {
+  font: 1.1rem/1.2 serif;
+  color: $gray;
+  margin: 5%;
+  padding: 0.6rem ;
+  position: relative;
+  em { color: $black; }
+  &:before {
+    display: block;
+    content: "\201C";
+    font-size: 3.5rem;
+    position: absolute;
+    left: -20px;
+    top: -10px;
+    color:  $base-color;
+  }
+  cite {
+    color: $dark-gray;
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 5px;
+    &:before {
+      content: "\2014 \00A0";;
+    }
+  }
+}

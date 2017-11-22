@@ -1,8 +1,10 @@
 ---
 layout: page
-title: "Book Production Process"
+title: Book Production Process
 date: 2014-11-29 10:14
-permalink: /book-production-process
+modified_at: 2014-11-29 10:14
+created_at: 2014-11-29 10:14
+permalink: /book-production-process/
 ---
 
 ## Introduction
@@ -11,7 +13,10 @@ I've tinkered with a lot of different ways to manage my book production over the
 
 ## Series Bible
 
-The Series Bible will be a Wiki managed via...
+The Series Bible will be a Git repository. It will include a directory for:
+
+* Stories in the series
+* Notebook with all the series data.
 
 ## Book Metadata
 
@@ -23,7 +28,7 @@ Most Git repository sites (e.g. Bitbucket, Github) use the "README.md" page as a
 
 ## Managing Book Development via Git
 
-Why keep books in a version control tool? I discuss the rationale in [How I protect My Copyright](/articles/how-i-protect-my-copyright/). [Git](http://en.wikipedia.org/wiki/Git_%28software%29) is a distributed revision control system with an emphasis on speed, data integrity, and support for distributed, non-linear workflows. I'm fairly linear, but there are other strengths; such as remote hosting repositories. I can even snapshot a version within the same local computer should I want to store the repo on Dropbox.
+Why keep books in a version control tool? I discuss the rationale in [How I protect My Copyright](/articles/how-i-protect-my-copyright/). [Git](https://en.wikipedia.org/wiki/Git) is a distributed revision control system with an emphasis on speed, data integrity, and support for distributed, non-linear workflows. I'm fairly linear, but there are other strengths; such as remote hosting repositories. I can even snapshot a version within the same local computer should I want to store the repo on Dropbox.
 
 ### Overview
 

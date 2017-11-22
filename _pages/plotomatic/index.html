@@ -1,0 +1,29 @@
+---
+layout: single
+permalink: /plotomatic/
+---
+
+<h2>Plotomatic</h2>
+
+<p>
+  The story starts in <strong id="start"></strong>. The villain (<strong id="villain"></strong>) resorts to <strong class="act"></strong> because of a desire for <strong id="motive"></strong>.
+  Having committed the <strong class="act"></strong>, the villain tries to conceal it or escape consequences.
+  In trying to flee, villain is confronted by <strong id="complication"></strong>.
+  Just when things are going well, <strong id="twist"></strong>
+</p>
+
+<script type="text/javascript">
+  uData = {};
+  function shuffle(t,arr) {
+    $(t).html(arr[Math.floor(Math.random()*arr.length)]);
+  }
+  $.getJSON("/data/plotomatic.json", function(data) {
+    shuffle('#start', data['start']);
+    shuffle('.act', data['act']);
+    shuffle('#motive', data['motive']);
+    shuffle('#twist', data['twist']);
+    shuffle('#complication', data['complication']);
+    shuffle('#villain', data['complication']);
+  });
+</script>
+

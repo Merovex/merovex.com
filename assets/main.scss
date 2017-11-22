@@ -11,7 +11,7 @@ body {
   pre, .photo img {box-shadow: 0.1em 0.1em 1em $gray; }
   em { padding: 0 0.1rem; }
 }
-main {min-height: calc(100vh-65px); height: auto !important; padding-bottom: 0.75in; }
+main {min-height: calc(100% - 152px); height: auto !important; padding-bottom: 0.75in; }
 h1, h2, h3, h4 { 
   color: $base-color; 
   small {
