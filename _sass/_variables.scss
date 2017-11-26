@@ -11,21 +11,40 @@ $google: #D34836;
 /* Light Green 92, 36, 56 */
 /* Light Plum   300°, 9%, 48% */
 
+/* https://commons.wikimedia.org/wiki/File:Color_star-en_(tertiary_names).svg */
+/* RebeccaPurple: 270,50,30 */
+$hue: (
+  'red'       :   0,
+  'orange'    :  30,
+  'yellow'    :  60,
+  'chartreuse':  90,
+  'green'     : 120,
+  'aquamarine': 150,
+  'cyan'      : 180,
+  'azure'     : 210,
+  'blue'      : 240,
+  'violet'    : 270,
+  'purple'    : 300,
+  'magenta'   : 330,
+  'signal'    : 260
+);
+
 /* A3C685 */
 /* base color: #45008A */
-$base-hue:              270;
-$base-saturation:       60;
-$base-lightness:        25;
+$base-hue:              map-get($hue, 'signal');
+$base-saturation:       25;
+$base-lightness:        30;
 
-$triad-hue-adjust:      160;
+$triad-hue-adjust:      120;
+$quad-hue-adjust: 90;
 $analogic-hue-adjust:   30;
 
 /* Base Color */
 $base-color:            hsl($base-hue, $base-saturation, $base-lightness);
 $base-color-dark:       saturate( darken($base-color, 15%), 7%);
 $base-color-darkened:   darken($base-color, 7%);
-$base-color-light:      desaturate(lighten($base-color, 55%), 10%);
-$base-color-lightened:  desaturate(lighten($base-color, 25%), 3%);
+$base-color-light:      desaturate(lighten($base-color, 30%), 10%);
+$base-color-lightened:  desaturate(lighten($base-color, 20%), 5%);
 
 /* Triad Colors */
 $triad-color-1:         saturate(adjust-hue($base-color, -$triad-hue-adjust), 30%);

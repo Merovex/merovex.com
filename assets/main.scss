@@ -15,7 +15,7 @@ main {
   min-height: calc(100% - 140px); height: auto !important; padding-bottom: 0.75in; 
   a {
     color: $darker-gray;
-    box-shadow: rgba($base-color-lightened, 0.5) 0 -2px 0 0 inset;
+    box-shadow: rgba($base-color, 0.9) 0 -2px 0 0 inset;
     &:hover{
     color: $darker-gray;
       text-shadow: 0 0 2em $base-color-lightened;
@@ -30,9 +30,9 @@ h1, h2, h3, h4 {
   }
 }
 h1.post-title {
-  border-top: 1px solid desaturate(lighten($base-color,40%),60);
-  border-bottom: 1px solid desaturate(lighten($base-color,40%),60);
-  background: desaturate(lighten($base-color, 60%),65%);
+  border-top:    1px solid desaturate($base-color-lightened,60);
+  border-bottom: 1px solid desaturate($base-color-lightened,60);
+  background:    desaturate(lighten($base-color, 55%),20%);
   padding: 3vh 0;
 }
 .dev {border: 1px solid red; }
