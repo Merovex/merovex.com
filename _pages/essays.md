@@ -48,9 +48,13 @@ title: Essays
     {% assign pages_list = tag[1] %}
     {% for post in pages_list %}
       {% if post.title != null %}
-      {% if group == null or group == post.group %}
+        {% if group == null or group == post.group %}
+          {% if post.external_url %}
+      <a href="{{ post.external_url }}">{{ post.title }}</a>
+          {% else %}
       <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
-      {% endif %}
+          {% endif %}
+        {% endif %}
       {% endif %}
     {% endfor %}
     {% assign pages_list = nil %}
