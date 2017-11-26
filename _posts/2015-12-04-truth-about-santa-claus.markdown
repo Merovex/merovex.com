@@ -4,7 +4,7 @@ title: Truth About Santa Claus
 author: Ben Wilson
 description: Forget what you thought you knew about Santa Claus. He's real.
 category: 'Diary'
-tags: [Truth, Christmas, Naughty, Humor]
+tags: [Truth, Christmas, Naughty, Humor, Holiday]
 photo:
   image: 3137198786_896818213a_o-santa.jpg
   creator: Seattleye/Flickr

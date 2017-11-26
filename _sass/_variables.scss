@@ -16,8 +16,8 @@ $analogic-hue-adjust:   30;
 $base-color:            hsl($base-hue, $base-saturation, $base-lightness);
 $base-color-dark:       saturate( darken($base-color, 15%), 7%);
 $base-color-darkened:   darken($base-color, 7%);
-$bsae-color-light:      desaturate(lighten($base-color, 40%), 10%);
-$base-color-lightened:  desaturate(lighten($base-color, 25%),  3%);
+$base-color-light:      desaturate(lighten($base-color, 55%), 10%);
+$base-color-lightened:  desaturate(lighten($base-color, 25%), 3%);
 
 /* Triad Colors */
 $triad-color-1:         saturate(adjust-hue($base-color, -$triad-hue-adjust), 30%);
@@ -31,7 +31,7 @@ $analogic-color-1:      adjust-hue($base-color,  $analogic-hue-adjust);
 $analogic-color-2:      adjust-hue($base-color, -$analogic-hue-adjust);
 
 /* Black and White */
-$black:                 desaturate(darken($base-color, 12%), 40%);
+$black:                 desaturate(darken($base-color, 20%), 60%);
 $white:                 adjust-hue(hsl($base-hue, 2, 93.333333333), 180);
 $dark-white:            darken($white,  8%);
 $bright-white:          lighten($white, 6.66666666667%);
@@ -41,7 +41,8 @@ $gray-hue:              $base-hue;
 $gray-saturation:       2;
 $gray-lightness:        52;
 $gray:                  hsl($gray-hue, $gray-saturation, $gray-lightness);
-$dark-gray:             darken($gray, 20%);
+$dark-gray:             darken($gray, 25%);
+$darker-gray:           darken($gray, 30%);
 $light-gray:            lighten($gray, 40%);
 $very-light-gray:       hsl($gray-hue, $gray-saturation, 98);
 

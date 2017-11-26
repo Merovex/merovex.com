@@ -19,6 +19,7 @@ tags:
 - Postal Marines Series
 ---
 Just about every writer's resources says to take time away from your writing project after the first draft. It's like spending an intense amount of time with a loved one, then abstaining for a while to make sure you're objective about the relationship. Or, whatever. How long is open to interpretation, but I figure four to six weeks for myself.
+
 <!-- more -->
 
 I'll be diving back into the drafting game with Imbroglio, which is Scintilla's predecessor. It's not a prequel. Both novels are in the same setting (Imperium Series). And, the hero in Imbroglio has a minor role in Scintilla. I plan on publishing Imbroglio first, so it's a race.

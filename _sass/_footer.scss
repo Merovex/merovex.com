@@ -1,7 +1,51 @@
 footer {
-  border-bottom: 1vh solid $base-color;
-  height: 8vh;
-  padding: 2vh 0;
-  text-align: center;
-  background: $white;
+  background: $dark-gray;
+  color: $light-gray;
+  padding-top: 8vh;
+  font-size: 13px;
+  a {
+    color: $base-color-light;
+    &:hover, &:active {
+      color: $white;
+    }
+  }
+  h5 {
+    color: $white;
+    svg {
+      height: 1.25rem;
+      fill: $white;
+    }
+  }
+  #legal {
+    background: $darker-gray;
+    height: 65px;
+    color: $gray;
+    margin-top: 8vh;
+    font-size: 11px;
+    p {
+      margin-top: 1em;
+    }
+    .copyright {
+      padding: 25px 0;
+    }
+    .social {
+      padding: 17px 0;
+      a {
+          font-size: 1.5em;
+          color: darken($dark-gray,12%) !important;
+          .fa-inverse {color: $dark-gray; }
+          &:hover {
+            color: lighten($dark-gray,40%) !important;
+            .fa-inverse {color: $dark-gray; }
+          }
+      }
+    }
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+      margin: 13px 0;
+    }
+  }
 }

@@ -1,7 +1,43 @@
 <footer>
-<div class="container">
-   Copyright © 2017 Ben Wilson. All Rights reserved. Expected copyright lapse 2122 AD. 
-   <a href='/policies'>Policies</a>
-</div>
-
+  <div class="container">
+    <div class="row">
+      <div class="col-md text-left">
+        <h5>
+          {% include logo-merovex.html %}
+          {% include name-merovex.html %}
+        </h5>
+        <p class='xwhite'>
+          Our mission is to tell stories that are uplifting and optimistic.
+        </p>
+        <p>
+          <a href="/about">More about Merovex</a>
+        </p>
+      </div>
+      <div class="col-md text-left">
+        <h6>Useful Links</h6>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/policies">Policies</a></li>
+          <li><a href="/essays">Essays</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="legal">
+    <div class="container">
+      <div class="row">
+        <div class="col copyright">
+           © {%include year.html %} Ben Wilson. <abbr title='Expected copyright lapse 2122 AD'>All Rights Reserved</abbr>
+        </div>
+        <div class="col text-right social">
+            {% include social-circle.html author=site.author.google_plus url='plus.google.com' icon='google-plus' %}
+            {% include social-circle.html author=site.author.twitter url='twitter.com' icon='twitter' %}
+            {% include social-circle.html author=site.author.facebook url='facebook.com' icon='facebook' %}
+            {% include social-circle.html author=site.author.pinterest url='pinterest.com' icon='pinterest' %}
+            {% include social-circle.html author=site.author.instagram url='instagram.com' icon='instagram' %}
+            {% include social-circle.html author=site.author.linkedin url='linkedin.com/company' icon='linkedin' %}
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>

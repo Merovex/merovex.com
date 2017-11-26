@@ -6,24 +6,28 @@ title: Essays
 
 {% include header.html %}
 <main class="page-content" aria-label="Content">
-<div class='container'>
-<h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-</div>
+<header>
+    <h1 class="post-title" itemprop="name headline">
+        <div class="container">
+            {{ page.title | escape }}
+        </div>
+    </h1>
+</header>
 
-<div class='jumbotron'>
-
-<div class='row'>
-  {% for post in site.posts limit: 6 %}
-  <div class='col-lg-4 col-md-6 col-sm-12'>
-    {% include post-card.html %}
-  </div>  
-  {% endfor %}
-</div>
+<div class='jumbotron' style='margin-top: -8px;'>
+  <div class='row'>
+    {% for post in site.posts limit: 6 %}
+    <div class='col-lg-4 col-md-6 col-sm-12'>
+      {% include post-card.html %}
+    </div>  
+    {% endfor %}
+  </div>
 </div>
 
 <div class='container'>
   <div class='row'>
     <div class='col-lg-6'>
+      
 <h2>Essays Categories</h2>
 <ul>{% assign categories_list = site.categories %}
   {% if categories_list.first[0] == null %}

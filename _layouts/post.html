@@ -2,13 +2,7 @@
 layout: single
 ---
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">{% if page.category %}{% assign category = page.category | downcase %}
-        <small aria-hidden='true'>
-          <i class="fa fa-folder" aria-hidden="true"></i> <a class='valign' href='{{ site.baseurl }}/categories/#{{ category | replace: ' ', '+'}}'>{{site.data['categories'][category]}}</a>
-        </small>
-    {%endif%}{{ page.title | escape }}
-      </h1>
+    <section class="post-section">
       <p  class='sr-only'>Category: {{category | titlecase}}</p>{% assign fred = page %}
           {% if page.subtitle %}<p class='subtitle'>{{page.subtitle}}</p>{%endif%}
       <p class="post-meta">
@@ -20,16 +14,20 @@ layout: single
         {% if page.author %}
           <i class="fa fa-user" aria-hidden="true"></i> <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
         {% endif %}
-        {% if page.tags %}{% include page_tags.html %}{%endif%}
+        <i class="fa fa-spinner" aria-hidden="true"></i> {{ content | number_of_words | plus: 180 | divided_by: 180 | append: " min read" }}
+        {% if page.category %}{% assign category = page.category | downcase %}
+          <i class="fa fa-folder" aria-hidden="true"></i> <a class='valign' href='{{ site.baseurl }}/categories/#{{ category | replace: ' ', '+'}}'>{{site.data['categories'][category]}}</a>
+        {%endif%}
+        {% unless page.tags==empty %}{% include page_tags.html %}{%endunless%}
       </p>
-    </header>
+    </section>
       {% if page.toc == true %}{% include toc.html %}{%endif%}
 
     <div class='excerpt lead'>
       {{ content | split:'<!-- more -->' | first |markdownify}}
     </div>
     <figure class='photo d-print-none'>
-      <img src='{{site.cdn_url}}/images/articles/{{page.photo["image"]}}' alt=""/>
+      <img class='rounded' src='{{site.cdn_url}}/images/articles/{{page.photo["image"]}}' alt=""/>
       <div>{{page.photo['caption']}} (Photo: <a href="{{page.photo['url']}}">{{page.photo['creator']}}</a> {{page.photo['license']}}.)</div>
     </figure>
     <div class="post-content" itemprop="articleBody">

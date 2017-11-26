@@ -6,10 +6,13 @@
 html, body { height: 100%; }
 body {
   background: $bright-white;
-  color: $black;
-  margin-top: 65px;
+  color: $darker-gray;
+  margin-top: 45px;
   pre, .photo img {box-shadow: 0.1em 0.1em 1em $gray; }
   em { padding: 0 0.1rem; }
+}
+.white {
+  color: $white;
 }
 main {min-height: calc(100% - 152px); height: auto !important; padding-bottom: 0.75in; }
 h1, h2, h3, h4 { 
@@ -18,6 +21,12 @@ h1, h2, h3, h4 {
     display: block;
     font-size: 40%;
   }
+}
+h1.post-title {
+  border-top: 1px solid desaturate(lighten($base-color,40%),60);
+  border-bottom: 1px solid desaturate(lighten($base-color,40%),60);
+  background: desaturate(lighten($base-color, 60%),65%);
+  padding: 3vh 0;
 }
 .dev {border: 1px solid red; }
 .wcag {padding: 1em;}

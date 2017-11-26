@@ -3,11 +3,7 @@ title: About
 permalink: /about/
 ---
 <!-- vogel-harvey-novak-cp-tot-trim -->
-
-## About Merovex Press
-
-Yes, the domain and site names are different. Dausha.net has been my personal site for nearly 20 years, and names are hard to change. A long time ago I had the nickname "Dausha" (which means noise pollution in Egyptian), though recently it became "Merovex" due to the vast amount of information I keep in my wee brain. Thus Merovex Press was born.
-
+<br>
 Merovex is the imprint for some of the worst science fiction you will ever read. I'll just leave it at that.
 
 ## About Ben Wilson
@@ -18,7 +14,7 @@ Ben Wilson is a science fiction writer, husband, father, project manager, lover 
 
 ### Ben in 50-ish Words
 
-Ben Wilson is a science fantasy writer. He’s into history, human nature and religious studies. He is the author of the [Postal Marine Series](/books), though he eventually wants to write four novel series. His books are available on [Amazon](http://www.amazon.com/Ben-Wilson/e/B001JSB9SY) Ben lives in Arlington, Virginia with his wife three children, and Milo the friendly cat.
+Ben Wilson is a science fantasy writer. He’s into history, human nature and religious studies. He is the author of the [Postal Marine Series](/#books), though he eventually wants to write four novel series. His books are available on [Amazon](http://www.amazon.com/Ben-Wilson/e/B001JSB9SY) Ben lives in Arlington, Virginia with his wife three children, and Milo the friendly cat.
 
 ### Why I write
 

@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title                     : Merovex Press
-description               : Merovex Press is the website for Ben Wilson, author of the Postal Marine Series.
+title                     : Merovex
+description               : Merovex is the website for Ben Wilson, author of the Postal Marine Series.
 # baseurl                   : "" # Only use when Jekyll site is not at root.
 url                       : https://www.merovex.com
 cdn_url                   : https://d1czp97ry8if6j.cloudfront.net
@@ -36,7 +36,7 @@ author:
   facebook                : MerovexPress
   foursquare              :
   github                  :
-  google_plus             : BenWilsonAuthor
+  google_plus             : +BenWilsonAuthor
   keybase                 :
   instagram               :
   lastfm                  :

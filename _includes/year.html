@@ -1,0 +1,6 @@
+{% capture time %}{{ site.time }}{% endcapture %}
+{% if page.date %}{% capture time %}{{ page.date }}{% endcapture %}{% endif %}
+{% if post.date %}{% capture time %}{{ post.date }}{% endcapture %}{% endif %}
+{% if page.updated %}{% capture updated %}{{ page.date_time_updated_html }}{% endcapture %}{% endif %}
+{% if post.updated %}{% capture updated %}{{ post.date_time_updated_html }}{% endcapture %}{% endif %}
+{{ time | date: "%Y" }}
