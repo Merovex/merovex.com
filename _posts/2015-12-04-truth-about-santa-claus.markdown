@@ -26,7 +26,7 @@ The first thing you have to realize is that Santa is not an immortal being. The 
 
 <blockquote>
   <p>Nicholas was a 4th-century Greek Christian bishop of Myra (now Demre) in Lycia, a province of the Byzantine Empire, now in Turkey. Nicholas was famous for his generous gifts to the poor, in particular presenting the three impoverished daughters of a pious Christian with dowries so that they would not have to become prostitutes.[6] He was very religious from an early age and devoted his life entirely to Christianity."</p>
-  <footer>Wikipedia in <a href='https://en.wikipedia.org/wiki/Santa_Claus'>Santa Claus</a></footer>
+  <cite>Wikipedia in <a href='https://en.wikipedia.org/wiki/Santa_Claus'>Santa Claus</a></cite>
 </blockquote>
 
 However, much like the Dread Pirate Roberts, when it was time for him to give up the mantel, he passed it down to a successor. Through the centuries, the various Nicks worked harder to be more hidden, out of piety to be certain. Christopher Kringle was one of the various incarnations of Claus that was discovered.
