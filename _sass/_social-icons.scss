@@ -1,25 +1,35 @@
 .social-networks {
-	width: 10%; padding-top: 1in; padding-left: 5%;
+	a {
+		width: 4em;
+	}
 	a.facebook {
-		background: #3b5998 !important;
+		background: $facebook !important;
 		color: white;
+		text-shadow: 1px 1px 8px $black;
 		&:hover {
-			background: #96abd6 !important;
-
+			background: desaturate(lighten($facebook,15%),5%) !important;
+			border-color: desaturate(lighten($facebook,15%),5%) !important;
 		}
 	}
 	a.twitter {
-		background: #0084b4 !important;
+		background: $twitter !important;
 		color: white;
+		text-shadow: 1px 1px 8px $black;
 		&:hover {
-			background: #4ed0ff !important;
+			background: desaturate(lighten($twitter,15%),5%) !important;
+			border-color: desaturate(lighten($twitter,15%),5%) !important;
 		}
 	}
 	a.google-plus {
-		background: #d34836 !important;
+		background: $google !important;
 		color: white;
+		text-shadow: 1px 1px 8px $black;
 		&:hover {
-			background: #e5948a !important;
+			background: desaturate(lighten($google,15%),5%) !important;
+			border-color: desaturate(lighten($google,15%),5%) !important;
 		}
 	}
 }
+a.sc-twitter     {&:hover {color: desaturate(lighten($twitter, 10%),10%) !important; } }
+a.sc-facebook    {&:hover {color: desaturate(lighten($facebook,10%),10%) !important; } }
+a.sc-google-plus {&:hover {color: desaturate(lighten($google,  10%),10%) !important; } }

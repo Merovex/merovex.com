@@ -4,7 +4,7 @@ permalink: /essays/
 title: Essays
 ---
 
-{% include header.html %}
+{% include navbar.html %}
 <main class="page-content" aria-label="Content">
 <header>
     <h1 class="post-title" itemprop="name headline">

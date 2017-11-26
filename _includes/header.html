@@ -1,15 +1,12 @@
 <nav id='header' class="navbar d-print-none fixed-top navbar-expand-md">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class='container'>
   <a class="navbar-brand" href="/">
     {% include logo-merovex.html %}
     {% include name-merovex.html %}
   </a>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" href="/about/">About</a>
@@ -24,7 +21,6 @@
     <button type="button" class="btn btn-success" style="display: none;" data-toggle="modal" data-target="#follow-modal" id='follow'>
       Follow
     </button>
-  </div>
   </div>
 </nav>
 

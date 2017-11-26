@@ -32,10 +32,10 @@ footer {
       padding: 17px 0;
       a {
           font-size: 1.5em;
-          color: darken($dark-gray,12%) !important;
+          color: darken($dark-gray,12%);
           .fa-inverse {color: $dark-gray; }
           &:hover {
-            color: lighten($dark-gray,40%) !important;
+            color: lighten($dark-gray,40%);
             .fa-inverse {color: $dark-gray; }
           }
       }

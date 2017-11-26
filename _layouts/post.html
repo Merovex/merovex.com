@@ -31,6 +31,7 @@ layout: single
       <div>{{page.photo['caption']}} (Photo: <a href="{{page.photo['url']}}">{{page.photo['creator']}}</a> {{page.photo['license']}}.)</div>
     </figure>
     <div class="post-content" itemprop="articleBody">
+      {% include social_networks.html %}
       {% if page.legal %}{% include legal-disclaimer.html %}{%endif%}
       {{ content | split:"<!-- more -->" | last |markdownify }}
     </div>
@@ -50,4 +51,3 @@ layout: single
         </div>
     </aside>
   </article>
-  {% include social_networks.html %}

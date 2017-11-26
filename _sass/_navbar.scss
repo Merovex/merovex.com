@@ -1,14 +1,14 @@
 .navbar {
-	background: $white;
-	border-top: 8px solid $base-color;
+	background: $base-color;
 	.nav-link {
-		color: rgba(0,0,0,.7); 
+		color: rgba(#FFF, 0.8);
 		&:hover {
 			text-decoration: underline !important;
 		}
 	}
-	svg { fill: $base-color; height: 1.75rem}
+	svg { fill: #FFF; height: 35px }
 }
+
 #header.scrolled {
 	background: rgba(205,205,205,0.0) !important;
 	a.nav-link {

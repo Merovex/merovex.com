@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% include header.html %}
+{% include navbar.html %}
 <div id="hero" class="jumbotron jumbotron-fluid d-print-none">
   <div class='img'></div>
   <div class="container">
@@ -45,7 +45,7 @@ layout: default
 {% include footer.html %}
 <script type='text/javascript'>
   $(document).ready(function() {
-  var s = $('#hero').innerHeight() - 0;
+  var s = $('#hero').innerHeight() - 36;
   $(window).on('scroll load', function() {
     if ($(window).scrollTop() < s) {
        $('#header').addClass('scrolled');
