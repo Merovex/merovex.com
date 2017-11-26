@@ -47,6 +47,12 @@ permalink: /uwp-translator/
     bits = uwp.split('');
 
     if (bits[7] == '-') {
+      ga('send',{
+        hitType: 'event',
+        eventCategory: 'Tool',
+        eventAction: 'Translation',
+        eventLabel: 'UWP Translator'
+      });
       uwpOutput = [];
       // alert( uwpStarport)
       uwpOutput.push(sname + " " + uData['port'][bits[0]])    // Starport

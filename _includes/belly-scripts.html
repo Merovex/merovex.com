@@ -1,7 +1,25 @@
 <script>
 $('#follow').on('shown.bs.modal', function () {
   $('#follow').focus()
-})
+});
+$('a[href^="http"]').click(function() { // external
+    console.log('link clicked');
+    ga('send',{
+      hitType: 'event',
+      eventCategory: 'Hyperlink',
+      eventAction: 'Outbound link clicked',
+      eventLabel: $(this).attr('href')
+    });
+});
+$("a[href^='/']").click(function() { // internal
+    console.log('Internal link clicked');
+    ga('send',{
+        hitType: 'event',
+        eventCategory: 'Hyperlink',
+        eventAction: 'Internal link clicked',
+        eventLabel: $(this).attr('href')
+      });
+});
 </script>
 
 <!-- Belly Scripts -->

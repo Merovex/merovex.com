@@ -1,12 +1,5 @@
 .page-content, article {
   padding-top: 3vh;
-  a {
-    text-decoration: underline;
-    &:hover{
-      text-shadow: 0 0 2em $base-color-lightened;
-      color: $base-color;
-    }
-  }
   .post-meta {color: $gray; }
   .excerpt p::first-letter {
     float: left;

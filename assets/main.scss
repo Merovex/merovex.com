@@ -11,10 +11,17 @@ body {
   pre, .photo img {box-shadow: 0.1em 0.1em 1em $gray; }
   em { padding: 0 0.1rem; }
 }
-.white {
-  color: $white;
+main {
+  min-height: calc(100% - 152px); height: auto !important; padding-bottom: 0.75in; 
+  a {
+    color: $darker-gray;
+    box-shadow: rgba($base-color-lightened, 0.5) 0 -2px 0 0 inset;
+    &:hover{
+    color: $darker-gray;
+      text-shadow: 0 0 2em $base-color-lightened;
+    }
+  }
 }
-main {min-height: calc(100% - 152px); height: auto !important; padding-bottom: 0.75in; }
 h1, h2, h3, h4 { 
   color: $base-color; 
   small {
