@@ -1,5 +1,5 @@
 ---
-permalink: /github-as-a-writer/labels
+permalink: /github-as-a-writer/labels/
 date: 2017-12-02 11:02:33
 title: "GaaW: Label Groups"
 ---
