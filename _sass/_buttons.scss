@@ -9,18 +9,31 @@
 .btn-default {
 	border-color: #CCC;
 	background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
-}
-.btn-default.print {
-  color: #06C;
-  &:hover {
-  	background-image: linear-gradient(to bottom,#09F 0,#06C 100%);
-  	color: #FFF;
+  &.print {
+    color: #06C;
+    &:hover {
+    	background-image: linear-gradient(to bottom,#09F 0,#06C 100%);
+    	color: #FFF;
+      border-color: #CCC;
+    }
+  }
+  &.ebook {
+  	color: #090;
+  	&:hover {
+      background-image: linear-gradient(to bottom,#0C0 0,#090 100%);
+      color: #FFF;
+      border-color: #CCC;
+	  }
   }
 }
-.btn-default.ebook {
-	color: #090;
-	&:hover {
-	  	background-image: linear-gradient(to bottom,#0C0 0,#090 100%);
-	  	color: #FFF;
-	  }
+.btn.gh {
+  font-weight: bold;
+  &.improvements {background: #66CCFF; border-color: #66CCFF;}
+  &.problems     {background: #CC3333; border-color: #CC3333; color: #FFF}
+  &.feedback     {background: #CC3399; border-color: #CC3399; color: #FFF}
+  &.additions    {background: #33CC33; border-color: #33CC33;}
+  &.mindless     {background: #CCCCFF; border-color: #CCCCFF;}
+  &.pending      {background: #FFCC00; border-color: #FFCC00;}
+  &.inactive     {background: #CCCCCC; border-color: #CCCCCC;}
+  &.experience   {background: #FF9933; border-color: #FF9933;}
 }
