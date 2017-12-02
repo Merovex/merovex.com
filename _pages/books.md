@@ -8,11 +8,10 @@ layout: wide
 
 <div class='row'>
   <div class='col-lg-10 offset-lg-1'>
-{% assign books = site.books | sort: 'series' %}
-{% for book in books %}
-
-{% unless book.hidden %}
+{%- assign books = site.books | sort: 'series' -%}
+{%- for book in books -%}
+{%- unless book.hidden -%}
 {% include book-summary.html %}
-{% endunless %}
-{% endfor %}
+{%- endunless -%}
+{%- endfor -%}
 </div></div>
