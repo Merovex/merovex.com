@@ -1,8 +1,18 @@
 ---
 permalink: /github-as-a-writer/labels/
 date: 2017-12-02 11:02:33
-title: "GaaW: Label Groups"
+title: "Label Groups"
 ---
+
+* {:.breadcrumb-item} [Home](/)
+* {:.breadcrumb-item} [Github as a Writer](/github-as-a-writer/)
+* {:.breadcrumb-item .active} {{page.title}}
+{: .breadcrumb aria-label='breadcrumb'}
+
+**Contents**
+
+* TOC
+{:toc}
 
 ## Introduction
 

@@ -115,7 +115,7 @@ collections:
     permalink: /korektu/:path/
   writing-tips:
     output: true
-    permalink: /:collection/:path/
+    permalink: /writing-tips/:path/
   writing-a-novel-series:
     output: true
     permalink: /wans/:path/

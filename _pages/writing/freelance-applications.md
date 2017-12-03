@@ -2,7 +2,7 @@
 layout: page
 title: Freelance Applications
 created_at: 2015-10-28 17:08
-permalink: /freelance-applications/
+permalink: /writing-career/freelance-applications/
 comments: true
 sharing: true
 footer: true

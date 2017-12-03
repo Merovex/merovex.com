@@ -5,6 +5,16 @@ modified_at: 2015-02-16 13:46
 created_at: 2015-02-16 13:46
 ---
 
+* {:.breadcrumb-item} [Home](/)
+* {:.breadcrumb-item} [Writing Tips](/writing-tips/)
+* {:.breadcrumb-item .active aria-current="page"} {{page.title}}
+{: .breadcrumb aria-label='breadcrumb'}
+
+**Contents**
+
+* TOC
+{:toc}
+
 These are my notes regarding the book *Moral Premise*, by Stan Williams. The story of a novel is the inner conflict between two conflicting values, such as:
 
 * Self-respect v. self-destruction

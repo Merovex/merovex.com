@@ -4,7 +4,7 @@ title: Business Plan
 date: 2015-04-12 11:24
 modified_at: 2015-04-12 11:24
 created_at: 2015-04-12 11:24
-permalink: /business-plan/
+permalink: /writing-career/business-plan/
 ---
 
 **Contents**

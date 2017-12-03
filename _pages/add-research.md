@@ -1,6 +1,6 @@
 ---
 title: My ADD Research
-permalink: /add/
+permalink: /add-research/
 ---
 
 

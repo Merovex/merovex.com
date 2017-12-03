@@ -22,6 +22,11 @@ The rest of this page summarizes how I use Github for managing writing projects.
 
 The Internet is filled with different ways to manage tasks. Github's task management focuses on the given repository. Tasks can be grouped by [labels](/github-as-a-writer/labels) and milestones.
 
+## Writing Process
+
+
+I've tinkered with a lot of different ways to manage my book production over the years. This is my effort to capture the process so I can stop screwing around. I have documented is my effort to organize my [Writing Process](/github-as-a-writer/book-production-process/).
+
 ## Editor
 
 <script type="text/javascript">

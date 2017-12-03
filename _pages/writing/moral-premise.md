@@ -3,9 +3,6 @@ layout: page
 title: moral premise
 sidebar: true
 date: 2015-02-16 13:46
-modified_at: 2015-02-16 13:46
-created_at: 2015-02-16 13:46
-permalink: /moral-premise/
 ---
 
 These are my notes regarding the book *Moral Premise*, by Stan Williams. The story of a novel is the inner conflict between two conflicting values, such as:

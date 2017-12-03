@@ -1,8 +1,17 @@
 ---
 title: "Editorial Standards"
 date: 2012-03-10 13:28
-permalink: /standards/
 ---
+
+* {:.breadcrumb-item} [Home](/)
+* {:.breadcrumb-item} [Writing Tips](/writing-tips/)
+* {:.breadcrumb-item .active} {{page.title}}
+{: .breadcrumb aria-label='breadcrumb'}
+
+**Contents**
+
+* TOC
+{:toc}
 
 ## Overview
 
@@ -185,12 +194,9 @@ height: 600px;
 width: 600px;
 "></div>
 
-*Parochialism—created for the safely defined boundaries of a certain community.
-*Promote strong values.
+* Parochialism---created for the safely defined boundaries of a certain community.
+* Promote strong values.
 * Teach a lesson
 * Happy Ending, Good prevails over evil
-*Adhere to a code of decency--this is changing & some are getting edgier (especially in terms of
-violence & blood & gore), but there are still boundaries that won’t be crossed, especially in regards to
-sexuality and language.
-*Typical remarks from readers: Christian books leave me feeling hopeful, I enjoy getting a lesson
-about how to live out 
+* Adhere to a code of decency---this is changing & some are getting edgier (especially in terms of violence & blood & gore), but there are still boundaries that won’t be crossed, especially in regards to sexuality and language.
+* Typical remarks from readers: Christian books leave me feeling hopeful, I enjoy getting a lesson about how to live out

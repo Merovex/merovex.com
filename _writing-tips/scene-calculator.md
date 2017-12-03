@@ -3,10 +3,14 @@ title: "Scene Calculator"
 date: 2012-03-08 21:08
 ---
 
-## Contents
-{:.no_toc}
+* {:.breadcrumb-item} [Home](/)
+* {:.breadcrumb-item} [Writing Tips](/writing-tips/)
+* {:.breadcrumb-item .active aria-current="page"} {{page.title}}
+{: .breadcrumb aria-label='breadcrumb'}
 
-* Will be replaced with the ToC, excluding the "Contents" header
+**Contents**
+
+* TOC
 {:toc}
 
 > Tell me a fact---I'll learn. Tell me the truth---I believe. But tell me a story---it will live in my heart forever.
