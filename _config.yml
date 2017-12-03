@@ -113,6 +113,9 @@ collections:
   books:
     output: true
     permalink: /korektu/:path/
+  github-as-a-writer:
+    output: true
+    permalink: /github-as-a-writer/:path/
   writing-tips:
     output: true
     permalink: /writing-tips/:path/
@@ -164,6 +167,12 @@ defaults:
     scope:
       path: ""
       type: "writing-a-novel-series"
+    values:
+      layout: single
+  -
+    scope:
+      path: ""
+      type: "github-as-a-writer"
     values:
       layout: single
   -

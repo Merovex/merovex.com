@@ -5,28 +5,27 @@ date: 2014-01-26 12:08
 permalink: /astro-empires/production-structures/
 landing: true
 ---
-{% include shared/astro_empire_header.html %}
 
-Many players like to balance the development of their infrastructure by
-their relative cost. The  normal way of doing this is either through a
-haphazard ordering of structures in the construction queue, or to go on
-advice of others. This page provides the players with an at-a-glance
-view of the relative cost (and value) of manufacturing structures at
-that tier.
+* {:.breadcrumb-item} [Home](/)
+* {:.breadcrumb-item} [Astro Empires](/astro-empires/)
+* {:.breadcrumb-item .active} {{page.title}}
+{: .breadcrumb aria-label='breadcrumb'}
 
+## Contents
+{:.no_toc}
 
-The following production calculator shows you what structures you need
-for balance, and what the relative construction and production values
-are of Metal-2 and Metal-3 bases. Adjustments for Cybernetics is
-included.
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
 
-<div class='toc'>
-  <a name='toc' id='toc'></a><b>On this page...</b> (<a id="tocidtog" href="javascript:toggle('tocid');">hide</a>)<ul class='toc' id='tocid'><li><a href='#toc1'>Production Calculator</a></li><li><a href='#toc2'>Balanced Structure Table</a></li><li><a href='#toc3'>Cost/Time Scale</a></li></ul></div>
+Many players like to balance the development of their infrastructure by their relative cost. The  normal way of doing this is either through a haphazard ordering of structures in the construction queue, or to go on advice of others. This page provides the players with an at-a-glance view of the relative cost (and value) of manufacturing structures at that tier.
 
-<h2><a name='toc1' id='toc1'></a>Production Calculator</h2>
+The following production calculator shows you what structures you need for balance, and what the relative construction and production values are of Metal-2 and Metal-3 bases. Adjustments for Cybernetics is included.
+
+## Production Calculator
+
 
 <form id='prod' method='post'>
-<table class='table table-condensed' ><tr>
+<table class='table table-sm' ><tr>
   <td> Metal Refinery </td>
   <td> <input type='text' name='MF' value='19' id='MF' class='inputbox' size='3' /> </td>
   <td> Cybernetics </td>
@@ -72,26 +71,17 @@ included.
 </table>
 </form>
 
-<h2><a name='toc2' id='toc2'></a>Balanced Structure Table</h2>
+## Balanced Structure Table
 
 The following table lists the six key manufacturing structures: Metal Refineries, Robotic Factories, Nanite Factories, Android Factories, Shipyards and Orbital Shipyards. They are organized on tiers of their relative cost, with the cost column baselined on the price of Metal Refineries at that tier. The other structure costs are relatively the same.
 
-<div class='note' >
-
-The parenthetical value represents the construction value of that tier,
-**based on a Metal-2 astro**. Add an additional 1 per level of Metal
-Refinery at that tier to get the construction value of that tier.
+<div class='alert alert-primary' >
+ The parenthetical value represents the construction value of that tier, <b>based on a Metal-2 astro</b>. Add an additional 1 per level of Metal Refinery at that tier to get the construction value of that tier.
 </div>
 
-The italicized value represents the ten percent increase in production
-created by having Cybernetics-2, which is the minimum technology
-necessary to build Orbital Shipyards. That suggests that at this level
-and beyond, the true value is different from the estimated value. This
-is also the case if you have a Construction or Production commander
-assigned to that base. So, remember to adjust these numbers according to
-your specific situation.
+The italicized value represents the ten percent increase in production created by having Cybernetics-2, which is the minimum technology necessary to build Orbital Shipyards. That suggests that at this level and beyond, the true value is different from the estimated value. This is also the case if you have a Construction or Production commander assigned to that base. So, remember to adjust these numbers according to your specific situation.
 
-<table class='table table-condensed table-hover'><tr>
+<table class='table table-sm table-hover'><tr>
   <th valign='top'>Cost </th>
   <th valign='top'>MR </th>
   <th valign='top'>RF </th>
@@ -280,7 +270,7 @@ your specific situation.
   <td class='SY' valign='top'>10 </td>
   <td class='OY' valign='top'>- </td>
   <td class='CV' valign='top'>60 </td>
-  <td class='CV' valign='top'>74<sup><a href='#fn-1'>1</a></sup> </td>
+  <td class='CV' valign='top'>74</td>
   <td class='PV' valign='top'>80 </td>
 </tr>
 <tr>
@@ -352,7 +342,7 @@ your specific situation.
   <td class='SY' valign='top'>16 </td>
   <td class='OY' valign='top'>- </td>
   <td class='CV' valign='top'>126 </td>
-  <td class='CV' valign='top'>146<sup><a href='#fn-2'>2</a></sup> </td>
+  <td class='CV' valign='top'>146</td>
   <td class='PV' valign='top'>158 </td>
 </tr>
 <tr>
@@ -417,31 +407,31 @@ your specific situation.
 </tr>
 </table>
 
-<h2><a name='toc3' id='toc3'></a>Cost/Time Scale</h2>
-<table class='table table-condensed table-hover'>
-  <tr><td>0</td><td align='right'>1.0</td><td align='right'>1.0</td></tr>
-  <tr><td>1</td><td align='right'>1.5</td><td align='right'>2.5</td></tr>
-  <tr><td>2</td><td align='right'>2.2</td><td align='right'>4.8</td></tr>
-  <tr><td>3</td><td align='right'>3.4</td><td align='right'>8.1</td></tr>
-  <tr><td>4</td><td align='right'>5.1</td><td align='right'>13.2</td></tr>
-  <tr><td>5</td><td align='right'>7.6</td><td align='right'>20.8</td></tr>
-  <tr><td>6</td><td align='right'>11.4</td><td align='right'>32.2</td></tr>
-  <tr><td>7</td><td align='right'>17.1</td><td align='right'>49.3</td></tr>
-  <tr><td>8</td><td align='right'>25.6</td><td align='right'>74.9</td></tr>
-  <tr><td>9</td><td align='right'>38.4</td><td align='right'>113.3</td></tr>
-  <tr><td>10</td><td align='right'>57.7</td><td align='right'>171.0</td></tr>
-  <tr><td>11</td><td align='right'>86.5</td><td align='right'>257.5</td></tr>
-  <tr><td>12</td><td align='right'>129.7</td><td align='right'>387.2</td></tr>
-  <tr><td>13</td><td align='right'>194.6</td><td align='right'>581.9</td></tr>
-  <tr><td>14</td><td align='right'>291.9</td><td align='right'>873.8</td></tr>
-  <tr><td>15</td><td align='right'>437.9</td><td align='right'>1311.7</td></tr>
-  <tr><td>16</td><td align='right'>656.8</td><td align='right'>1968.5</td></tr>
-  <tr><td>17</td><td align='right'>985.3</td><td align='right'>2953.8</td></tr>
-  <tr><td>18</td><td align='right'>1477.9</td><td align='right'>4431.7</td></tr>
-  <tr><td>19</td><td align='right'>2216.8</td><td align='right'>6648.5</td></tr>
+## Cost/Time Scale
+
+<table class='table table-sm table-hover'>
+  <tr><td>0</td><td class='text-right'>1.0</td><td class='text-right'>1.0</td></tr>
+  <tr><td>1</td><td class='text-right'>1.5</td><td class='text-right'>2.5</td></tr>
+  <tr><td>2</td><td class='text-right'>2.2</td><td class='text-right'>4.8</td></tr>
+  <tr><td>3</td><td class='text-right'>3.4</td><td class='text-right'>8.1</td></tr>
+  <tr><td>4</td><td class='text-right'>5.1</td><td class='text-right'>13.2</td></tr>
+  <tr><td>5</td><td class='text-right'>7.6</td><td class='text-right'>20.8</td></tr>
+  <tr><td>6</td><td class='text-right'>11.4</td><td class='text-right'>32.2</td></tr>
+  <tr><td>7</td><td class='text-right'>17.1</td><td class='text-right'>49.3</td></tr>
+  <tr><td>8</td><td class='text-right'>25.6</td><td class='text-right'>74.9</td></tr>
+  <tr><td>9</td><td class='text-right'>38.4</td><td class='text-right'>113.3</td></tr>
+  <tr><td>10</td><td class='text-right'>57.7</td><td class='text-right'>171.0</td></tr>
+  <tr><td>11</td><td class='text-right'>86.5</td><td class='text-right'>257.5</td></tr>
+  <tr><td>12</td><td class='text-right'>129.7</td><td class='text-right'>387.2</td></tr>
+  <tr><td>13</td><td class='text-right'>194.6</td><td class='text-right'>581.9</td></tr>
+  <tr><td>14</td><td class='text-right'>291.9</td><td class='text-right'>873.8</td></tr>
+  <tr><td>15</td><td class='text-right'>437.9</td><td class='text-right'>1311.7</td></tr>
+  <tr><td>16</td><td class='text-right'>656.8</td><td class='text-right'>1968.5</td></tr>
+  <tr><td>17</td><td class='text-right'>985.3</td><td class='text-right'>2953.8</td></tr>
+  <tr><td>18</td><td class='text-right'>1477.9</td><td class='text-right'>4431.7</td></tr>
+  <tr><td>19</td><td class='text-right'>2216.8</td><td class='text-right'>6648.5</td></tr>
 </table>
 
-<div id='footnotes'>
-<ol><li><a name='fn-1' id='fn-1'></a>  Pring in a week for an asteroid
-</li><li><a name='fn-2' id='fn-2'></a>  Pring in a week for a moon
-</li></ol></div>
+
+[^fn-1] Pring in a week for an asteroid
+[^fn-2] Pring in a week for a moon

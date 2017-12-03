@@ -8,21 +8,26 @@ footer: true
 landing: false
 permalink: /astro-empires/advanced-base-guide/
 ---
-[Base Defense Guide]: /astro-empires/base-defense-guide
-[Small Fleet Doctrine]: /astro-empires/small-fleet-doctrine
-[Production Structures]: /astro-empires/production-structures
-[Seven Ten Guide]: /astro-empires/seven-ten-guide
-[Seven/Ten Guide]: /astro-empires/seven-ten-guide
 
-{% include shared/astro_empire_header.html %}
-
-**Updated 2016.** This Advanced Base Guide focuses on base specialization and location. It is ideal for players who are planning to play free accounts, but should be of use for any player. If you find an area confusing, I can be reached via my [Facebook Fan page](http://on.fb.me/1M3gSiz).
+* {:.breadcrumb-item} [Home](/)
+* {:.breadcrumb-item} [Astro Empires](/astro-empires/)
+* {:.breadcrumb-item .active} {{page.title}}
+{: .breadcrumb aria-label='breadcrumb'}
 
 ## Contents
 {:.no_toc}
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
+
+
+[Base Defense Guide]: /astro-empires/base-defense-guide
+[Small Fleet Doctrine]: /astro-empires/small-fleet-doctrine
+[Production Structures]: /astro-empires/production-structures
+[Seven Ten Guide]: /astro-empires/seven-ten-guide
+[Seven/Ten Guide]: /astro-empires/seven-ten-guide
+
+**Updated 2016.** This Advanced Base Guide focuses on base specialization and location. It is ideal for players who are planning to play free accounts, but should be of use for any player. If you find an area confusing, I can be reached via my [Facebook Fan page](http://on.fb.me/1M3gSiz).
 
 ## Astro Layout
 
@@ -50,9 +55,9 @@ in the beginning, then converting them to Production bases.
 <tr><th align='center' colspan='3'>Base Build Order</th>
 </tr>
 <tr>
-  <th scope='col'>Order</strong></th>
-  <th scope='col'>Specialization</strong></th>
-  <th scope='col'>Astro Type</strong></th>
+  <th scope='col'>Order</th>
+  <th scope='col'>Specialization</th>
+  <th scope='col'>Astro Type</th>
 </tr>
 </thead>
   <tbody>
@@ -382,7 +387,7 @@ Crystals, and Research planets need more area and fertility.
   <th align='center'>Area Moon</th>
 </tr>
 <tr>
-  <th scope='row'>Arid</strong></th>
+  <th scope='row'>Arid</th>
   <td align='center'>2</td>
   <td align='center'>2</td>
   <td align='center'>0</td>
@@ -391,7 +396,7 @@ Crystals, and Research planets need more area and fertility.
   <td align='center'><span  style='color: red;'><strong>83</strong></span></td>
 </tr>
 <tr>
-  <th scope='row'>Asteroid</strong></th>
+  <th scope='row'>Asteroid</th>
   <td align='center'><span  style='color: red;'><strong>3</strong></span></td>
   <td align='center'>1</td>
   <td align='center'><span  style='color: red;'><strong>2</strong></span></td>
@@ -399,7 +404,7 @@ Crystals, and Research planets need more area and fertility.
   <td align='center' colspan='2'>65</td>
 </tr>
 <tr>
-  <th scope='row'>Craters</strong></th>
+  <th scope='row'>Craters</th>
   <td align='center'><span  style='color: red;'><strong>3</strong></span></td>
   <td align='center'>1</td>
   <td align='center'>1</td>
@@ -408,7 +413,7 @@ Crystals, and Research planets need more area and fertility.
   <td align='center'>75</td>
 </tr>
 <tr>
-  <th scope='row'>Crystalline</strong></th>
+  <th scope='row'>Crystalline</th>
   <td align='center'>2</td>
   <td align='center'>1</td>
   <td align='center'><span  style='color: red;'><strong>3</strong></span></td>
@@ -417,7 +422,7 @@ Crystals, and Research planets need more area and fertility.
   <td align='center'>71</td>
 </tr>
 <tr>
-  <th scope='row'>Earthly</strong></th>
+  <th scope='row'>Earthly</th>
   <td align='center'>2</td>
   <td align='center'>2</td>
   <td align='center'>0</td>
@@ -426,7 +431,7 @@ Crystals, and Research planets need more area and fertility.
   <td align='center'><span  style='color: red;'><strong>75</strong></span></td>
 </tr>
 <tr>
-  <th scope='row'>Gaia</strong></th>
+  <th scope='row'>Gaia</th>
   <td align='center'>2</td>
   <td align='center'>2</td>
   <td align='center'>0</td>
@@ -435,7 +440,7 @@ Crystals, and Research planets need more area and fertility.
   <td align='center'><span  style='color: red;'><strong>79</strong></span></td>
 </tr>
 <tr>
-  <th scope='row'>Glacial</strong></th>
+  <th scope='row'>Glacial</th>
   <td align='center'>1</td>
   <td align='center'>2</td>
   <td align='center'>0</td>
@@ -444,7 +449,7 @@ Crystals, and Research planets need more area and fertility.
   <td align='center'>83</td>
 </tr>
 <tr>
-  <th scope='row'>Magma</strong></th>
+  <th scope='row'>Magma</th>
   <td align='center'>2</td>
   <td align='center'>4</td>
   <td align='center'>0</td>
@@ -453,7 +458,7 @@ Crystals, and Research planets need more area and fertility.
   <td align='center'>71</td>
 </tr>
 <tr>
-  <th scope='row'>Metallic</strong></th>
+  <th scope='row'>Metallic</th>
   <td align='center'><span  style='color: red;'><strong>3</strong></span></td>
   <td align='center'>2</td>
   <td align='center'>1</td>
@@ -462,7 +467,7 @@ Crystals, and Research planets need more area and fertility.
   <td align='center'>75</td>
 </tr>
 <tr>
-  <th scope='row'>Oceanic</strong></th>
+  <th scope='row'>Oceanic</th>
   <td align='center'>1</td>
   <td align='center'>2</td>
   <td align='center'>0</td>
@@ -471,7 +476,7 @@ Crystals, and Research planets need more area and fertility.
   <td align='center'>71</td>
 </tr>
 <tr>
-  <th scope='row'>Radioactive</strong></th>
+  <th scope='row'>Radioactive</th>
   <td align='center'>2</td>
   <td align='center'>3</td>
   <td align='center'>0</td>
@@ -480,7 +485,7 @@ Crystals, and Research planets need more area and fertility.
   <td align='center'>79</td>
 </tr>
 <tr>
-  <th scope='row'>Rocky</strong></th>
+  <th scope='row'>Rocky</th>
   <td align='center'><span  style='color: red;'><strong>3</strong></span></td>
   <td align='center'>2</td>
   <td align='center'>0</td>
@@ -489,7 +494,7 @@ Crystals, and Research planets need more area and fertility.
   <td align='center'>75</td>
 </tr>
 <tr>
-  <th scope='row'>Toxic</strong></th>
+  <th scope='row'>Toxic</th>
   <td align='center'>2</td>
   <td align='center'>4</td>
   <td align='center'>0</td>
@@ -498,7 +503,7 @@ Crystals, and Research planets need more area and fertility.
   <td align='center'>79</td>
 </tr>
 <tr>
-  <th scope='row'>Tundra</strong></th>
+  <th scope='row'>Tundra</th>
   <td align='center'>2</td>
   <td align='center'>2</td>
   <td align='center'>0</td>
@@ -507,7 +512,7 @@ Crystals, and Research planets need more area and fertility.
   <td align='center'><span  style='color: red;'><strong>83</strong></span></td>
 </tr>
 <tr>
-  <th scope='row'>Volcanic</strong></th>
+  <th scope='row'>Volcanic</th>
   <td align='center'>2</td>
   <td align='center'>4</td>
   <td align='center'>0</td>
