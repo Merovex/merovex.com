@@ -1,6 +1,7 @@
 ---
 title: "Editorial Standards"
 date: 2012-03-10 13:28
+permalink: /writing/standards/
 ---
 
 * {:.breadcrumb-item} [Home](/)
@@ -19,6 +20,52 @@ All writings convey a message. Stories have themes and espouse a point of view; 
 
 Merovex Press reviewed the external standards below in developing its editorial standards. Each of the three harmonize both in worldview and attitude, and Merovex Press seeks to harmonize with these as well. Additionally, Merovex Press seeks to ensure its stories maintain a composite score of 4.0 when measured against the PULS-V Standards Scale described below.
 
+<table class='table table-sm'>
+  <tr>
+    <th width='20%'>Propriety</th>    
+    <td width='5%'>
+      <input type="number" name="p" id='p'>
+    </td>
+    <td><span id="pd">D</span></td>
+  </tr>
+  <tr>
+    <th>chemical Use</th> 
+    <td>
+      <input type="number" name="u" id='u'>
+    </td>
+    <td><span id="ud"></span></td>
+  </tr>
+  <tr>
+    <th>Language</th>     
+    <td>
+      <input type="number" name="l" id='l'>
+    </td>
+    <td><span id="ld"></span></td>
+  </tr>
+  <tr>
+    <th>Sexuality</th>    
+    <td>
+      <input type="number" name="s" id='s'>
+    </td>
+    <td><span id="sd"></span></td>
+  </tr>
+  <tr>
+    <th>Violence</th>     
+    <td>
+      <input type="number" name="v" id='v'>
+    </td>
+    <td><span id="vd"></span></td>
+  </tr>
+  <tr><th colspan='2'>PULS-V Score:</th><td><span id="ps"></span><span id="us"></span><span id="ls"></span><span id="ss"></span>-<span id="vs"></span>//<span id="cumulative"></span></td>
+  </tr>
+</table>
+
+<!-- HTML -->
+<div id="chartdiv" style="
+height: 600px;
+width: 600px;
+"></div>
+
 ## PULS-V Standards Scale
 
 The PULS-V Standards Scale measures written content on a five-point Likert scale considering (P)ropriety, Chemical (U)se, (L)anguage, (S)exuality/Nudity and (V)iolence. A five fully meets the ideal for a given standard. One may consider a given standard or average the sum of them for a composite score from 1.0 to 5.0.
@@ -31,45 +78,25 @@ A four or five score for a given standard is considered "acceptable." When consi
 
 Propriety describes behavior that conforms to established biblical standards of good or proper behavior & manners. This includes lawful and moral behavior, and respect for authority, conviction and religion. Impropriety describes illegal or immoral behavior (not covered elsewhere); includes exploitation of supernatural or paranormal forces. Christian biblical values and world view govern.
 
-* **5 - Propriety shown in positive light**
-* **4 - Mild to moderate impropriety with consequences**
-* 3 - Moderate impropriety without consequences
-* 2 - Moderate impropriety condoned or excused
-* 1 - Extreme portrayals of impropriety condoned or excused
+<ul id="pstd"></ul>
 
 #### Chemical Use (Drugs & Alcohol)
 
-* **5 - None**
-* **4 - Occasional use of legal chemical use by non viewpoint characters**
-* 3 - Historically accurate use of legal chemical use (alcohol, tobacco)
-* 2 - Frequent chemical use (legal or not) with consequences
-* 1 - Frequent chemical use without consequences
+<ul id="ustd"></ul>
 
 #### Language
 
-* **5 - None**
-* **4 - Limited, mildly crude**
-* 3 - Crude language used throughout
-* 2 - Gross sexual language
-* 1 - Biblical profanity 
+<ul id="lstd"></ul>
 
 #### Sexuality/Nudity
 
-* **5 - No Sex or Romance**
-* **4 - Romance but no sex**
-* 3 - Inappropriate sexual behavior with consequences; sexual descriptions of characters
-* 2 - Inappropriate sexual behavior without consequences; graphic sexual descriptions of characters
-* 1 - Graphic sexual activity
+<ul id="sstd"></ul>
 
 #### Violence
 
 Gratuitous violence is violence for the sake of being violent. Usually associated with low budget movies and cult video games. Given without need or cause, or given disproportional to the cause.
 
-* **5 - None**
-* **4 - Mild, non-gratuitous or comic violence**
-* 3 - Gratuitous violence
-* 2 - Grossly described gratuitous violence
-* 1 - Grossly described gratuitous violence leading to death, dismemberment, 
+<ul id="vstd"></ul>
 
 ## External Standards
 
@@ -146,53 +173,6 @@ Lead characters that exhibit disrespect for authority, lying, cheating, stealing
 * 4-5:	 extreme portrayals, condoned or excused
 
 {% include amcharts/scripts.html %}
-<!-- Chart code -->
-<script>
-var chart = AmCharts.makeChart( "chartdiv", {
-  "type": "radar",
-  "theme": "light",
-  "dataProvider": [ {
-    "standard": "Propriety",
-    "score": 4
-  }, {
-    "standard": "ChemUse",
-    "score": 4
-  }, {
-    "standard": "Language",
-    "score": 5
-  }, {
-    "standard": "Sex/Nudity",
-    "score": 5
-  }, {
-    "standard": "Violence",
-    "score": 3
-  }],
-  "valueAxes": [ {
-    "gridType": "circles",
-    "maximum": 5,
-    "axisTitleOffset": 20,
-    "minimum": 1,
-    "axisAlpha": 0.15
-  } ],
-  "startDuration": 2,
-  "graphs": [ {
-    "balloonText": "[[value]] score of beer per year",
-    "bullet": "round",
-    "lineThickness": 2,
-    "valueField": "score"
-  } ],
-  "categoryField": "standard",
-  "export": {
-    "enabled": true
-  }
-} );
-</script>
-
-<!-- HTML -->
-<div id="chartdiv" style="
-height: 600px;
-width: 600px;
-"></div>
 
 * Parochialism---created for the safely defined boundaries of a certain community.
 * Promote strong values.
@@ -200,3 +180,128 @@ width: 600px;
 * Happy Ending, Good prevails over evil
 * Adhere to a code of decency---this is changing & some are getting edgier (especially in terms of violence & blood & gore), but there are still boundaries that won’t be crossed, especially in regards to sexuality and language.
 * Typical remarks from readers: Christian books leave me feeling hopeful, I enjoy getting a lesson about how to live out
+
+<script type="text/javascript">
+  var definitions = {
+    'propriety': [
+      "1 - Extreme portrayals of impropriety condoned or excused",
+      "2 - Moderate impropriety condoned or excused",
+      "3 - Moderate impropriety without consequences",
+      "4 - Mild to moderate impropriety with consequences",
+      "5 - Propriety shown in positive light",
+    ],
+    'use': [
+      "1 - Frequent chemical use without consequences",
+      "2 - Frequent chemical use (legal or not) with consequences",
+      "3 - Historically accurate use of legal chemical use (alcohol, tobacco)",
+      "4 - Occasional use of legal chemical use by non viewpoint characters",
+      "5 - None",
+    ],
+    'language': [
+      "1 - Biblical profanity",
+      "2 - Gross sexual language",
+      "3 - Crude language used throughout",
+      "4 - Limited, mildly crude",
+      "5 - None",
+    ],
+    'sexuality': [
+      "1 - Graphic sexual activity",
+      "2 - Inappropriate sexual behavior without consequences; graphic sexual descriptions of characters",
+      "3 - Inappropriate sexual behavior with consequences; sexual descriptions of characters",
+      "4 - Romance but no sex",
+      "5 - No Sex or Romance",
+    ],
+    'violence': [
+      "1 - Grossly described gratuitous violence leading to death, dismemberment",
+      "2 - Grossly described gratuitous violence",
+      "3 - Gratuitous violence",
+      "4 - Mild, non-gratuitous or comic violence",
+      "5 - None",
+    ],
+  }
+  function ecval(key,value) { $(key).html(+ value);}
+  function getSVal(key) { return $("input[id^='"+key+"']").val(); }
+  function dc(k, i) {return Math.round( (k * i * 1.0302111) * 100 ) / 100 }
+  function chartit(p,u,l,s,v) {
+    var chart = AmCharts.makeChart( "chartdiv", {
+      "type": "radar",
+      "theme": "light",
+      "dataProvider": [
+        {"standard": "Propriety",  "score": p },
+        {"standard": "ChemUse",    "score": u },
+        {"standard": "Language",   "score": l },
+        {"standard": "Sex/Nudity", "score": s },
+        {"standard": "Violence",   "score": v }
+      ],
+      "valueAxes": [ {
+        "gridType": "circles",
+        "maximum": 5,
+        "axisTitleOffset": 20,
+        "minimum": 1,
+        "axisAlpha": 0.15
+      } ],
+      "startDuration": 2,
+      "graphs": [ {
+        "balloonText": "[[value]] score",
+        "bullet": "round",
+        "lineThickness": 2,
+        "valueField": "score"
+      } ],
+      "categoryField": "standard",
+      "export": {
+        "enabled": true
+      }
+    } );
+  }
+  function rangeit(x) {
+    if (x < 1) { return 1 }
+    if (x > 5) { return 5 }
+    return x;
+  }
+  function ec_cal() {
+    var p = rangeit(getSVal('p')) || 1;
+    var u = rangeit(getSVal('u')) || 1;
+    var l = rangeit(getSVal('l')) || 1;
+    var s = rangeit(getSVal('s')) || 1;
+    var v = rangeit(getSVal('v')) || 1;
+    var sum = (+p + +u + +l + +s + +v);
+    chartit(p,u,l,s,v);
+    // console.log(sum);
+    var ave =  sum / 5;
+    ecval('#ps',p);
+    ecval('#us',u);
+    ecval('#ls',l);
+    ecval('#ss',s);
+    ecval('#vs',v);
+    ecval('#cumulative',ave);
+    $('#pd').html(definitions['propriety'][+p - 1]);
+    $('#ud').html(definitions['use'][+u - 1]);
+    $('#ld').html(definitions['language'][+l - 1]);
+    $('#sd').html(definitions['sexuality'][+s - 1]);
+    $('#vd').html(definitions['violence'][+v - 1]);
+  }
+  $('#p').keyup(function(event){ ec_cal(); });
+  $('#u').keyup(function(event){ ec_cal(); });
+  $('#l').keyup(function(event){ ec_cal(); });
+  $('#s').keyup(function(event){ ec_cal(); });
+  $('#v').keyup(function(event){ ec_cal(); });
+  
+  function listStandards(list) {
+    block = "";
+    for (var i = list.length - 1; i >= 0; i--) {
+      var item = "<li>"+list[i] +"</li>";
+      if (i > 2) {item = "<b>"+item+"</b>"; }
+      block += item;
+    }
+    return block;
+  }
+  function showStandards() {
+    $('#pstd').html(listStandards(definitions['propriety']));
+    $('#ustd').html(listStandards(definitions['use']));
+    $('#lstd').html(listStandards(definitions['language']));
+    $('#sstd').html(listStandards(definitions['sexuality']));
+    $('#vstd').html(listStandards(definitions['violence']));
+  }
+  ec_cal();
+  showStandards();
+</script>
