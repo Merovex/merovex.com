@@ -1,0 +1,15 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/merovex/Sites/merovex.com/"
+		}
+	],
+  "settings":
+    {
+        "Jekyll":
+        {
+          "jekyll_auto_find_paths": true
+        }
+    }
+}

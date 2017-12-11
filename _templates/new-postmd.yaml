@@ -1,0 +1,29 @@
+---
+layout: post
+title: ""
+author: Ben Wilson
+description: "Summary for RSS Feed"
+category: 'diary'
+category: 'worldbuilding'
+category: 'postal-marine-series'
+category: 'technology'
+category: 'vw-beetle'
+category: 'writing'
+category: 'philosophy'
+tags: []
+photo:
+  image: filename.jpg
+  creator: Creator Name
+  url: path-to-source
+  license: Public Domain, RR, BY, BY-SA, BY-ND
+  caption: "King George III in coronation robes"
+date: DTG
+modified_at: DTG
+created_at: DTG
+---
+
+Teaser Before the Image
+
+<!-- more -->
+
+Text after the images
