@@ -157,7 +157,6 @@ date: 2012-03-08 21:08
   </tbody>
 </table>
 
-
 ## Treatment
 
 ### Act 1
@@ -198,3 +197,38 @@ date: 2012-03-08 21:08
 4. ...
 5. ...
 6. ...
+
+## Eight Segemnt Story
+
+### Sequence One
+
+This is the opening hook that excites the reader’s curiosity, followed by any (brief!) exposition answering the who, what, when, and where of what’s happening in the story. A peek into the life of the protagonist before the story gets under way gives us an idea of the “normal world,” before that world is disrupted by the story action. This first sequence then ends with the inciting incident or point of attack: the thing that happens that disrupts the normal world of the story and encourages the protagonist to take action.
+
+### Sequence Two
+
+At this point, the protagonist attempts to reestablish the “normal world” and correct the disruption introduced by the inciting incident. But the hero fails, and is then faced with an even worse plight. It is in this sequence that the dramatic question of the story is posed. In a traditional three-act structure, the end of this sequence would correspond to the end of Act One.
+Sequence Three
+
+The hero now tries to resolve the problem that’s been presented. Exposition left over from Sequence One is often brought out here. By now the hero is locked into the situation and can’t just walk away: the stakes are too high and there’s a lot more to lose now. He considers the problem vis-à-vis his options and presents a hopeful-looking solution. But….
+
+### Sequence Four
+
+The hero’s solution from the last sequence fails at the beginning of this one, and a new and greater obstacle to success is introduced (in accordance with the principle of “rising action” in a story). The hero then goes on to make one or more desperate attempts to restore the status quo of the “normal world.” The end of this sequence represents the midpoint or crisis, and brings with it a major revelation or reversal. The reader should be guessing now at how the story turns out. The midpoint crisis often reflects the ending: in a tragedy (the hero fails/dies), then this is a low-point for the hero. In a comedy (the hero wins/lives), this sequence often ends with a small victory.
+
+### Sequence Five
+
+Here, the protagonist deals with the aftermath of the mid-point crisis. And this is also where most stories bog down. Often, a strong subplot is needed to take over for a while, to maintain reader interest. You’ll still want rising action, but often new characters are introduced, or new opportunities are discovered in the fifth sequence.
+
+### Sequence Six
+
+In a traditional Three-Act Structure, this would be the end (or near the end) of the Second Act. The sequence builds tension to the second, greater crisis, returning from Subplot Land with a bullet. The greatest obstacle, the last option, the highest/lowest moment and the end of the main story tension all come in this sequence. The hero has done all he can reasonably do, yet the outcome is still in doubt. The obvious answer might be exactly opposite to how the story really ends.
+
+### Sequence Seven
+
+Here is where we usually see a last-minute plot twist. Any new tension is established fully and briefly, along with any necessary exposition. The apparent solution of the central dramatic question from the last sequence shows its weaknesses here. The stakes are raised, and the effect of any long-dangling plot thread may be felt. The action is simpler and fast, with rapid, short scenes and no elaborate set-ups. The story is seen in a new way, and the protagonist needs to change or reverse his goals. The twist (if there is one) comes at the end of this sequence or the top of the next one.
+
+### Sequence Eight
+
+Now the story is hell-bent for leather and a final resolution of the story question. Clarity about the consequences is essential. Clip the yellow wire and all will be well. Clip the red wire, and the hero, his love interest, his best pal, and the rest of the Tri-State Area will be nuclear barbecue.
+For more idea- and character-driven stories, we can still have complex emotions and deep philosophical ideas in this concluding sequence, but clarity is key and the story tension must be resolved, for good or ill.
+The final resolution should be considered in relation to hints from the first and second crisis moments in Sequences Four and Six, and any remaining subplots from Sequence Five should be wrapped up. There may be a brief epilogue, and/or you may recall some element from the first sequence here to “close the circle” of the hero’s story. Alternately, there may be a lead-in to another story if you’re working in a series
