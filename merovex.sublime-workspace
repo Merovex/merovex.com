@@ -15,6 +15,15 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "_posts/2017-12-15-8-pointed-snowflake.markdown",
+			"settings":
+			{
+				"buffer_size": 8678,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -23,17 +32,21 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 127.0,
-		"last_filter": "install",
+		"height": 392.0,
+		"last_filter": "pac",
 		"selected_items":
 		[
 			[
-				"install",
-				"Package Control: Install Package"
+				"pac",
+				"Package Control: List Packages"
 			],
 			[
 				"j",
 				"Jekyll: Insert current datetime"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
 			],
 			[
 				"packa",
@@ -72,10 +85,18 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/merovex/Sites/merovex.com"
+		"/Users/merovex/Sites/merovex.com",
+		"/Users/merovex/Sites/merovex.com/_data",
+		"/Users/merovex/Sites/merovex.com/_templates"
 	],
 	"file_history":
 	[
+		"/Users/merovex/Sites/merovex.com/_data/categories.yml",
+		"/Users/merovex/Sites/merovex.com/_writing-tips/scene-calculator.md",
+		"/Users/merovex/Sites/merovex.com/_posts/2017-12-15-snowflake-meets-eight-segments.markdown",
+		"/Users/merovex/Sites/merovex.com/merovex.sublime-project",
+		"/Users/merovex/Sites/merovex.com/_drafts/goals-for-2018.markdown",
+		"/Users/merovex/Sites/merovex.com/_templates/new-postmd.yaml",
 		"/Users/merovex/Documents/BrainBook/Writing-Craft/character-sketch-explained.md",
 		"/Users/merovex/Documents/BrainBook/Writing/four-act-structure.md",
 		"/Users/merovex/Sites/merovex.com/_pages/contrast-maker.html",
@@ -84,7 +105,7 @@
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -98,6 +119,26 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\"><td>",
+			"<th>",
+			"<tr>",
+			"primary",
+			"<th>",
+			"> 8<",
+			"> 8",
+			"12",
+			"</tr>",
+			"9",
+			"<td>-</td>",
+			"s.",
+			"</tr>",
+			"<th",
+			"th>",
+			"col'",
+			"<th>",
+			"DTG",
+			":",
+			"2017-07-04 10:14"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -115,14 +156,46 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "_posts/2017-12-15-8-pointed-snowflake.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8678,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6853,
+								6853
+							]
+						],
+						"settings":
+						{
+							"markdonw_live_preview_last_run": 1513358554.9,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6181.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 41.0
+		"height": 40.0
 	},
 	"input":
 	{
@@ -159,7 +232,7 @@
 	"project": "merovex.sublime-project",
 	"replace":
 	{
-		"height": 78.0
+		"height": 76.0
 	},
 	"save_all_on_build": false,
 	"select_file":
@@ -168,6 +241,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"8-p",
+				"_posts/2017-12-15-8-pointed-snowflake.markdown"
+			],
+			[
+				"sce",
+				"_writing-tips/scene-calculator.md"
+			],
 			[
 				"tr",
 				"docs/treatment.md"
